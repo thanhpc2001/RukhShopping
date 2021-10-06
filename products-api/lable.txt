@@ -1,0 +1,14 @@
+[
+  'beef',           'pork',       'chicken',
+  'egg',            'fish',       'tuber',
+  'raunem',         'vegetable',  'fruit',
+  'processed_food', 'fresh_milk', 'bean_milk',
+  'condensed_milk', 'yogurt',     'barley_drink',
+  'cereals',        'mianlien',   'chaoanlien',
+  'banhgaohanquoc', 'spice',      'cooking_oil',
+  'hatnembotngot',  'fish_sauce', 'chili_sauce',
+  'soy_sauce',      'soda',       'cafe_tea',
+  'water',          'snack',      'cookies',
+  'sponge_cake',    'socola',     'cake_sticks',
+  'drying_fruits'
+]

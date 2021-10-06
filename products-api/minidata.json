@@ -1,0 +1,1976 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Thịt, cá, trứng, rau"
+        },
+        {
+            "id": 2,
+            "name": "Sữa uống các loại"
+        },
+        {
+            "id": 3,
+            "name": "Mì, cháo, phở, bún"
+        },
+        {
+            "id": 4,
+            "name": "Gia vị các loại"
+        },
+        {
+            "id": 5,
+            "name": "Thức uống các loại"
+        },
+        {
+            "id": 6,
+            "name": "Bánh, kẹo các loại"
+        }
+    ],
+    "codes": [
+        {
+            "id": "1_1",
+            "name": "Thịt, cá, tôm, trứng",
+            "categoryId": 1
+        },
+        {
+            "id": "1_2",
+            "name": "Rau củ, rau nêm",
+            "categoryId": 1
+        },
+        {
+            "id": "1_3",
+            "name": "Trái cây tươi",
+            "categoryId": 1
+        },
+        {
+            "id": "1_4",
+            "name": "Thực phẩm sơ chế",
+            "categoryId": 1
+        },
+        {
+            "id": "2_1",
+            "name": "Sữa tươi các loại",
+            "categoryId": 2
+        },
+        {
+            "id": "2_2",
+            "name": "Sữa hạt, sữa đậu",
+            "categoryId": 2
+        },
+        {
+            "id": "2_3",
+            "name": "Sữa đặc các loại",
+            "categoryId": 2
+        },
+        {
+            "id": "2_4",
+            "name": "Sữa chua uống liền",
+            "categoryId": 2
+        },
+        {
+            "id": "2_5",
+            "name": "Thức uống lúa mạch",
+            "categoryId": 2
+        },
+        {
+            "id": "2_6",
+            "name": "Ngũ cốc, ca cao",
+            "categoryId": 2
+        },
+        {
+            "id": "3_1",
+            "name": "Mì gói ăn liền",
+            "categoryId": 3
+        },
+        {
+            "id": "3_2",
+            "name": "Cháo gói, cháo tươi",
+            "categoryId": 3
+        },
+        {
+            "id": "3_3",
+            "name": "Bánh gạo Hàn Quốc",
+            "categoryId": 3
+        },
+        {
+            "id": "4_1",
+            "name": "Đường, muối, gia vị",
+            "categoryId": 4
+        },
+        {
+            "id": "4_2",
+            "name": "Dầu ăn các loại",
+            "categoryId": 4
+        },
+        {
+            "id": "4_3",
+            "name": "Hạt nêm, bột ngọt",
+            "categoryId": 4
+        },
+        {
+            "id": "4_4",
+            "name": "Nước mắm các loại",
+            "categoryId": 4
+        },
+        {
+            "id": "4_5",
+            "name": "Tương ớt, tương đen",
+            "categoryId": 4
+        },
+        {
+            "id": "4_6",
+            "name": "Nước tương các loại",
+            "categoryId": 4
+        },
+        {
+            "id": "5_1",
+            "name": "Nước ngọt các loại",
+            "categoryId": 5
+        },
+        {
+            "id": "5_2",
+            "name": "Cà phê, trà các loại",
+            "categoryId": 5
+        },
+        {
+            "id": "5_3",
+            "name": "Nước suối, nước khoáng",
+            "categoryId": 5
+        },
+        {
+            "id": "6_1",
+            "name": "Bánh snack, rong biển",
+            "categoryId": 6
+        },
+        {
+            "id": "6_2",
+            "name": "Bánh quy, bánh trứng",
+            "categoryId": 6
+        },
+        {
+            "id": "6_3",
+            "name": "Bánh bông lan ngọt",
+            "categoryId": 6
+        },
+        {
+            "id": "6_4",
+            "name": "Bánh, kẹo socola",
+            "categoryId": 6
+        },
+        {
+            "id": "6_5",
+            "name": "Bánh que, bánh quế",
+            "categoryId": 6
+        },
+        {
+            "id": "6_7",
+            "name": "Hạt, trái cây sấy",
+            "categoryId": 6
+        }
+    ],
+    "classifies": [
+        {
+            "id": "beef",
+            "name": "Thịt bò các loại",
+            "codeId": "1_1"
+        },
+        {
+            "id": "pork",
+            "name": "Thịt heo các loại",
+            "codeId": "1_1"
+        },
+        {
+            "id": "chicken",
+            "name": "Thịt gà các loại",
+            "codeId": "1_1"
+        },
+        {
+            "id": "eeg",
+            "name": "Trứng gà, vịt, cút",
+            "codeId": "1_1"
+        },
+        {
+            "id": "fish",
+            "name": "Cá, tôm, mực, ếch",
+            "codeId": "1_1"
+        },
+        {
+            "id": "tuber",
+            "name": "Củ quả các loại",
+            "codeId": "1_2"
+        },
+        {
+            "id": "raunem",
+            "name": "Hành, tỏi, rau nêm",
+            "codeId": "1_2"
+        },
+        {
+            "id": "vegetable",
+            "name": "Rau xanh các loại",
+            "codeId": "1_2"
+        },
+        {
+            "id": "fruit",
+            "name": "Trái cây các loại",
+            "codeId": "1_3"
+        },
+        {
+            "id": "processed_food",
+            "name": "Thực phẩm sơ chế",
+            "codeId": "1_4"
+        },
+        {
+            "id": "fresh_milk",
+            "name": "Sữa tươi các loại",
+            "codeId": "2_1"
+        },
+        {
+            "id": "bean_milk",
+            "name": "Sữa hạt, sữa đậu",
+            "codeId": "2_2"
+        },
+        {
+            "id": "condensed_milk",
+            "name": "Sữa đặc các loại",
+            "codeId": "2_3"
+        },
+        {
+            "id": "yogurt",
+            "name": "Sữa chua uống liền",
+            "codeId": "2_4"
+        },
+        {
+            "id": "barley_drink",
+            "name": "Thức uống lúa mạch",
+            "codeId": "2_5"
+        },
+        {
+            "id": "cereals",
+            "name": "Ngũ cốc, ca cao",
+            "codeId": "2_6"
+        },
+        {
+            "id": "mianlien",
+            "name": "Mì gói ăn liền",
+            "codeId": "3_1"
+        },
+        {
+            "id": "chaoanlien",
+            "name": "Cháo ăn liền",
+            "codeId": "3_2"
+        },
+        {
+            "id": "banhgaohanquoc",
+            "name": "Bánh gạo Hàn Quốc",
+            "codeId": "3_3"
+        },
+        {
+            "id": "spice",
+            "name": "Đường, muối, gia vị",
+            "codeId": "4_1"
+        },
+        {
+            "id": "cooking_oil",
+            "name": "Dầu ăn các loại",
+            "codeId": "4_2"
+        },
+        {
+            "id": "hatnembotngot",
+            "name": "Hạt nêm, bột ngọt",
+            "codeId": "4_3"
+        },
+        {
+            "id": "fish_sauce",
+            "name": "Nước mắm các loại",
+            "codeId": "4_4"
+        },
+        {
+            "id": "chili_sauce",
+            "name": "Tương ớt, tương đen",
+            "codeId": "4_5"
+        },
+        {
+            "id": "soy_sauce",
+            "name": "Nước tương các loại",
+            "codeId": "4_6"
+        },
+        {
+            "id": "soda",
+            "name": "Giải khát các loại",
+            "codeId": "5_1"
+        },
+        {
+            "id": "cafe_tea",
+            "name": "Cà phê, trà các loại",
+            "codeId": "5_2"
+        },
+        {
+            "id": "water",
+            "name": "Nước suối, nước khoáng",
+            "codeId": "5_3"
+        },
+        {
+            "id": "snack",
+            "name": "Bánh snack, rong biển",
+            "codeId": "6_1"
+        },
+        {
+            "id": "cookies",
+            "name": "Bánh quy, bánh trứng",
+            "codeId": "6_2"
+        },
+        {
+            "id": "sponge_cake",
+            "name": "Bánh gạo, bánh xốp",
+            "codeId": "6_3"
+        },
+        {
+            "id": "socola",
+            "name": "Bánh, kẹo socola",
+            "codeId": "6_4"
+        },
+        {
+            "id": "cake_sticks",
+            "name": "Bánh que, bánh quế",
+            "codeId": "6_5"
+        },
+        {
+            "id": "drying_fruits",
+            "name": "Hạt, trái cây sấy",
+            "codeId": "6_6"
+        }
+    ],
+    "products": [
+        {
+            "id": "bb1b-3f95",
+            "name": "Bò Úc tươi xay nhuyễn Pacow 250g",
+            "price": 69500,
+            "image": "https://cdn.tgdd.vn/Products/Images/8139/239160/bhx/thit-bo-uc-xay-khay-250g-202106220758175140_300x300.jpeg",
+            "description": "",
+            "inventory": 169,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "beef"
+        },
+        {
+            "id": "63d8-cf44",
+            "name": "Thăn bò nhập khẩu đông lạnh 500g",
+            "price": 152000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8139/248986/bhx/than-bo-nhap-khau-dong-lanh-tui-1kg-202108181905441583_300x300.jpeg",
+            "description": "",
+            "inventory": 260,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "beef"
+        },
+        {
+            "id": "66c6-dc1b",
+            "name": "Bò Úc tươi cắt lát Pacow khay 250g",
+            "price": 99000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8139/239162/bhx/bo-uc-xao-khay-250g-202106220856383238_300x300.jpeg",
+            "description": "",
+            "inventory": 273,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "beef"
+        },
+        {
+            "id": "fbc7-11e4",
+            "name": "Bắp bò nhập khẩu đông lạnh 500g",
+            "price": 134000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8139/248987/bhx/bap-bo-nhap-khau-dong-lanh-tui-1kg-202108181906570721_300x300.jpeg",
+            "description": "",
+            "inventory": 175,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "beef"
+        },
+        {
+            "id": "b7fb-74a2",
+            "name": "Ba rọi heo rút sườn C.P khay 500g",
+            "price": 123000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8781/241252/bhx/ba-roi-heo-rut-suon-cp-khay-500g-202106210901554178_300x300.jpeg",
+            "description": "",
+            "inventory": 21,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "pork"
+        },
+        {
+            "id": "7c63-5f3e",
+            "name": "Sườn non heo tươi C.P khay 500g",
+            "price": 109000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8781/228333/bhx/suon-non-heo-cp-khay-500g-202106261109559953_300x300.jpeg",
+            "description": "",
+            "inventory": 277,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "pork"
+        },
+        {
+            "id": "78a7-9a84",
+            "name": "Thịt ba rọi heo tươi C.P khay 500g",
+            "price": 96000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8781/228329/bhx/ba-roi-heo-cp-khay-500g-202106260952555108_300x300.jpeg",
+            "description": "",
+            "inventory": 28,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "pork"
+        },
+        {
+            "id": "88bb-982b",
+            "name": "Sườn non heo G 300g (2-4 miếng)",
+            "price": 94000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8781/241227/bhx/suon-non-heo-g-khay-300g-202107241139001999_300x300.jpeg",
+            "description": "",
+            "inventory": 184,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "pork"
+        },
+        {
+            "id": "4778-c63e",
+            "name": "Ức gà tươi phi lê CP khay 500g",
+            "price": 43500,
+            "image": "https://cdn.tgdd.vn/Products/Images/8790/239600/bhx/uc-ga-tuoi-phi-le-khay-500g-202105200016488014_300x300.jpeg",
+            "description": "",
+            "inventory": 237,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "chicken"
+        },
+        {
+            "id": "6b65-952f",
+            "name": "Cánh giữa nhập khẩu đông lạnh 500g",
+            "price": 54500,
+            "image": "https://cdn.tgdd.vn/Products/Images/8790/249010/bhx/canh-ga-giua-nhap-khau-dong-lanh-tui-1kg-202108181825511115_300x300.jpg",
+            "description": "",
+            "inventory": 224,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "chicken"
+        },
+        {
+            "id": "bf9e-f2b9",
+            "name": "Đùi gà góc tư tươi C.P khay 500g",
+            "price": 37000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8790/226948/bhx/dui-ga-goc-tu-khay-500g-202103041439053421_300x300.jpg",
+            "description": "",
+            "inventory": 165,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "chicken"
+        },
+        {
+            "id": "91c3-ffde",
+            "name": "Đùi gà góc tư đông lạnh túi 500g",
+            "price": 29500,
+            "image": "https://cdn.tgdd.vn/Products/Images/8790/249007/bhx/dui-ga-goc-tu-nhap-khau-dong-lanh-tui-1kg-202108150347076535_300x300.jpeg",
+            "description": "",
+            "inventory": 224,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "chicken"
+        },
+        {
+            "id": "8b51-62ee",
+            "name": "Hộp 10 trứng gà tươi T.Food ",
+            "price": 30000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8783/228775/bhx/hop-10-trung-ga-tuoi-happy-egg-202110020007083093_300x300.jpg",
+            "description": "",
+            "inventory": 78,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "egg"
+        },
+        {
+            "id": "3acb-5923",
+            "name": "Hộp 6 trứng gà ta tươi sạch T.Food",
+            "price": 22000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8783/226998/bhx/hop-6-trung-ga-ta-tfood-202103041455228982_300x300.jpg",
+            "description": "",
+            "inventory": 123,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "egg"
+        },
+        {
+            "id": "cfaf-d82b",
+            "name": "Hộp 6 trứng vịt tươi sạch T.Food",
+            "price": 21600,
+            "image": "https://cdn.tgdd.vn/Products/Images/8783/223369/bhx/hop-6-trung-vit-bach-hoa-xanh-202102040111489896_300x300.jpg",
+            "description": "",
+            "inventory": 293,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "egg"
+        },
+        {
+            "id": "b47c-685a",
+            "name": "Hộp 30 trứng cút tươi sạch TFood",
+            "price": 21500,
+            "image": "https://cdn.tgdd.vn/Products/Images/8783/219097/bhx/hop-30-trung-cut-tuoi-tfood-202104051424406499_300x300.jpg",
+            "description": "",
+            "inventory": 69,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "egg"
+        },
+        {
+            "id": "405b-f216",
+            "name": "Cá hố cắt khúc Mama Food khay 200g",
+            "price": 38000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8400/240465/bhx/ca-ho-cat-khuc-dong-lanh-mama-food-khay-200g-202106021040037364_300x300.jpg",
+            "description": "",
+            "inventory": 41,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "fish"
+        },
+        {
+            "id": "5e54-b1c7",
+            "name": "Cá saba tẩm sa tế Mama Food 500g",
+            "price": 75000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8400/236832/bhx/ca-saba-tam-sa-te-dong-lanh-mama-food-goi-500g-202106031459313095_300x300.jpg",
+            "description": "",
+            "inventory": 23,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "fish"
+        },
+        {
+            "id": "1499-a2a9",
+            "name": "Cá saba tẩm rau Mama Food gói 500g",
+            "price": 75000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8400/236782/bhx/ca-saba-tam-rau-dong-lanh-mama-food-goi-500g-202106031455133735_300x300.jpg",
+            "description": "",
+            "inventory": 244,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "fish"
+        },
+        {
+            "id": "28ad-6413",
+            "name": "Sò điệp Nhật Oceangift khay 240g",
+            "price": 275000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8400/243096/bhx/so-diep-nhat-oceangift-khay-240g-202107031021230073_300x300.jpg",
+            "description": "",
+            "inventory": 131,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_1",
+            "classifyId": "fish"
+        },
+        {
+            "id": "d771-2cd1",
+            "name": "Khoai mỡ tím túi lưới 1kg (1-2 củ)",
+            "price": 47000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8785/220460/bhx/khoai-mo-tui-1kg-202103031643285988_300x300.jpg",
+            "description": "",
+            "inventory": 170,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_2",
+            "classifyId": "tuber"
+        },
+        {
+            "id": "ecad-24e9",
+            "name": "Khoai lang Nhật dẻo ngọt túi 1kg",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8785/226905/bhx/khoai-lang-nhat-tui-1kg-202103031621032927_300x300.jpg",
+            "description": "",
+            "inventory": 291,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_2",
+            "classifyId": "tuber"
+        },
+        {
+            "id": "bfe5-6c8b",
+            "name": "Ớt chuông xanh túi 300g (2-3 trái)",
+            "price": 26500,
+            "image": "https://cdn.tgdd.vn/Products/Images/8785/232238/bhx/ot-chuong-xanh-tui-300g-202103031515543354_300x300.jpg",
+            "description": "",
+            "inventory": 18,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_2",
+            "classifyId": "tuber"
+        },
+        {
+            "id": "f385-6c06",
+            "name": "Cà tím nguyên trái túi 500g",
+            "price": 25500,
+            "image": "https://cdn.tgdd.vn/Products/Images/8785/222879/bhx/ca-tim-tui-500g-202103031637555178_300x300.jpg",
+            "description": "",
+            "inventory": 57,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_2",
+            "classifyId": "tuber"
+        },
+        {
+            "id": "c8d6-8c90",
+            "name": "Củ tỏi Vietfresh túi lưới 200g",
+            "price": 11800,
+            "image": "https://cdn.tgdd.vn/Products/Images/8786/226894/bhx/toi-tui-200g-202103031620092832_300x300.jpg",
+            "description": "",
+            "inventory": 19,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_2",
+            "classifyId": "raunem"
+        },
+        {
+            "id": "4473-417e",
+            "name": "Hành tím Lý Sơn túi lưới 200g",
+            "price": 11800,
+            "image": "https://cdn.tgdd.vn/Products/Images/8786/226891/bhx/hanh-tim-tui-200g-202103031619542896_300x300.jpg",
+            "description": "",
+            "inventory": 203,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_2",
+            "classifyId": "raunem"
+        },
+        {
+            "id": "d4ea-3d30",
+            "name": "Ớt hiểm nguyên trái túi 50g ",
+            "price": 9700,
+            "image": "https://cdn.tgdd.vn/Products/Images/8786/226884/bhx/ot-hiem-tui-50g-202103031624387439_300x300.jpg",
+            "description": "",
+            "inventory": 83,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_2",
+            "classifyId": "raunem"
+        },
+        {
+            "id": "bcd9-6e7c",
+            "name": "Chanh tươi không hạt túi 200g",
+            "price": 7500,
+            "image": "https://cdn.tgdd.vn/Products/Images/8786/222867/bhx/chanh-tui-200g-202103031639038642_300x300.jpg",
+            "description": "",
+            "inventory": 145,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_2",
+            "classifyId": "raunem"
+        },
+        {
+            "id": "5d0b-5d51",
+            "name": "Nấm linh chi trắng hộp 150g",
+            "price": 34000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8820/223050/bhx/nam-linh-chi-trang-bach-hoa-xanh-hop-150g-202106142245276095_300x300.jpeg",
+            "description": "",
+            "inventory": 17,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_2",
+            "classifyId": "vegetable"
+        },
+        {
+            "id": "8e2d-734f",
+            "name": "Nấm linh chi nâu tươi hộp 150g",
+            "price": 32500,
+            "image": "https://cdn.tgdd.vn/Products/Images/8820/234856/bhx/nam-linh-chi-nau-bach-hoa-xanh-150g-202103242255483316_300x300.jpg",
+            "description": "",
+            "inventory": 201,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_2",
+            "classifyId": "vegetable"
+        },
+        {
+            "id": "26be-8c7c",
+            "name": "Nấm đùi gà cây to 200g (2-4 cây)",
+            "price": 27500,
+            "image": "https://cdn.tgdd.vn/Products/Images/8820/228921/bhx/nam-dui-ga-tui-200g-202103031515178368_300x300.jpg",
+            "description": "",
+            "inventory": 228,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_2",
+            "classifyId": "vegetable"
+        },
+        {
+            "id": "7efc-cefb",
+            "name": "Nấm hải sản Việt Nam tươi túi 150g",
+            "price": 25000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8820/226954/bhx/nam-hai-san-tui-150g-202103031615480754_300x300.jpg",
+            "description": "",
+            "inventory": 168,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_2",
+            "classifyId": "vegetable"
+        },
+        {
+            "id": "9124-a540",
+            "name": "Táo Gala mini nhập khẩu hộp 1kg",
+            "price": 49000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8788/233534/bhx/tao-gala-mini-nhap-khau-tui-500g-202104150130286620_300x300.jpg",
+            "description": "",
+            "inventory": 241,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_3",
+            "classifyId": "fruit"
+        },
+        {
+            "id": "3d27-a95f",
+            "name": "Kiwi vàng Zespri 500g (2-3 trái)",
+            "price": 139000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8788/223453/bhx/kiwi-vang-hop-300g-202106101020108773_300x300.jpg",
+            "description": "",
+            "inventory": 237,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_3",
+            "classifyId": "fruit"
+        },
+        {
+            "id": "03ad-eb13",
+            "name": "Lê Nam Phi nhập khẩu hộp 1kg",
+            "price": 72000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8788/202856/bhx/le-nam-phi-nhap-khau-hop-1kg-5-6-trai-202105101332548898_300x300.jpeg",
+            "description": "",
+            "inventory": 157,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_3",
+            "classifyId": "fruit"
+        },
+        {
+            "id": "6638-85ee",
+            "name": "Táo Fuji Nam Phi 1kg (5-7 trái)",
+            "price": 60000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8788/223866/bhx/tao-fuji-nhap-khau-nam-phi-hop-1kg-8-9-trai-202105130857033513_300x300.jpeg",
+            "description": "",
+            "inventory": 79,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_3",
+            "classifyId": "fruit"
+        },
+        {
+            "id": "1a3d-fa2b",
+            "name": "Lẩu hải sản Mama Food gói 500g",
+            "price": 68000,
+            "image": "https://cdn.tgdd.vn/Products/Images/7259/236501/bhx/lau-hai-san-mama-food-500g-202104281326049188_300x300.jpeg",
+            "description": "",
+            "inventory": 51,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_4",
+            "classifyId": "processed_food"
+        },
+        {
+            "id": "270c-588f",
+            "name": "Lẩu mắm miền Tây Mama Food 500g",
+            "price": 69000,
+            "image": "https://cdn.tgdd.vn/Products/Images/7259/236502/bhx/lau-mam-mien-tay-mama-food-500g-202104281301437897_300x300.jpeg",
+            "description": "",
+            "inventory": 47,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_4",
+            "classifyId": "processed_food"
+        },
+        {
+            "id": "4e3e-89b1",
+            "name": "Lẩu cua đồng hải sản Mama 500g",
+            "price": 69000,
+            "image": "https://cdn.tgdd.vn/Products/Images/7259/236504/bhx/lau-cua-dong-hai-san-mama-food-500g-202104281306074758_300x300.jpeg",
+            "description": "",
+            "inventory": 32,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_4",
+            "classifyId": "processed_food"
+        },
+        {
+            "id": "4bde-2d6b",
+            "name": "Phô mai que Mozzarela VuiVui 250g",
+            "price": 55000,
+            "image": "https://cdn.tgdd.vn/Products/Images/7259/226229/bhx/pho-mai-que-vuivui-khay-250g-202104230927465714_300x300.jpeg",
+            "description": "",
+            "inventory": 230,
+            "date": "",
+            "categoryId": 1,
+            "codeId": "1_4",
+            "classifyId": "processed_food"
+        },
+        {
+            "id": "4d62-f935",
+            "name": "4 hộp sữa có đường Nuvita 110ml",
+            "price": 17000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2386/87233/bhx/loc-4-hop-sua-tiet-trung-co-duong-nuvita-110ml-202105151201138666_300x300.jpg",
+            "description": "",
+            "inventory": 227,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_1",
+            "classifyId": "fresh_milk"
+        },
+        {
+            "id": "1631-3533",
+            "name": "Sữa tươi có đường Vinamilk 220ml",
+            "price": 6600,
+            "image": "https://cdn.tgdd.vn/Products/Images/2386/79276/bhx/sua-dinh-duong-co-duong-vinamilk-happy-star-bich-220ml-202105151140170406_300x300.jpg",
+            "description": "",
+            "inventory": 180,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_1",
+            "classifyId": "fresh_milk"
+        },
+        {
+            "id": "6b5e-16ce",
+            "name": "48 hộp sữa tươi Dutch Lady 110ml",
+            "price": 215000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2386/86189/bhx/thung-48-hop-sua-tuoi-tiet-trung-co-duong-dutch-lady-110ml-202105151157480151_300x300.jpg",
+            "description": "",
+            "inventory": 75,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_1",
+            "classifyId": "fresh_milk"
+        },
+        {
+            "id": "aa24-aefb",
+            "name": "4 hộp sữa có đường DutchLady 110ml",
+            "price": 18000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2386/80465/bhx/loc-4-hop-sua-tiet-trung-co-duong-dutch-lady-110ml-202105151144338913_300x300.jpg",
+            "description": "",
+            "inventory": 184,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_1",
+            "classifyId": "fresh_milk"
+        },
+        {
+            "id": "64be-6970",
+            "name": "48 hộp sữa đậu hạt Vinamilk 180ml",
+            "price": 330000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2943/168575/bhx/thung-48-hop-sua-dau-nanh-oc-cho-vinamilk-180ml-202104100045019171_300x300.jpg",
+            "description": "",
+            "inventory": 262,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_2",
+            "classifyId": "bean_milk"
+        },
+        {
+            "id": "86ef-eb8e",
+            "name": "12 hộp đậu đen và Sahmyook 950ml",
+            "price": 950000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2943/214606/bhx/thung-12-hop-sua-dau-den-oc-cho-hanh-nhan-sahmyook-950ml-202104092327067750_300x300.jpg",
+            "description": "",
+            "inventory": 194,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_2",
+            "classifyId": "bean_milk"
+        },
+        {
+            "id": "c25e-a8a2",
+            "name": "24 hộp sữa hạnh nhân So Good 250ml",
+            "price": 690000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2943/244380/bhx/thung-24-hop-sua-hanh-nhan-khong-duong-so-good-250ml-202106291423223695_300x300.jpeg",
+            "description": "",
+            "inventory": 235,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_2",
+            "classifyId": "bean_milk"
+        },
+        {
+            "id": "8df6-cd75",
+            "name": "48 hộp sữa đậu nành đậu đỏ 180ml",
+            "price": 330000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2943/203653/bhx/thung-48-hop-sua-dau-nanh-dau-do-vinamilk-180ml-202104100043199124_300x300.jpg",
+            "description": "",
+            "inventory": 22,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_2",
+            "classifyId": "bean_milk"
+        },
+        {
+            "id": "8cc6-ee9e",
+            "name": "Kem đặc có đường Nuti đỏ 1,284kg",
+            "price": 57500,
+            "image": "https://cdn.tgdd.vn/Products/Images/2526/204330/bhx/kem-dac-co-duong-nuti-do-hop-1-284kg-202104151351123077_300x300.jpg",
+            "description": "",
+            "inventory": 100,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_3",
+            "classifyId": "condensed_milk"
+        },
+        {
+            "id": "68e9-43f8",
+            "name": "Kem đặc có đường Hoàn Hảo 1,27kg",
+            "price": 54000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2526/178973/bhx/kem-dac-co-duong-hoan-hao-hop-1-27kg-202104151345285743_300x300.jpg",
+            "description": "",
+            "inventory": 277,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_3",
+            "classifyId": "condensed_milk"
+        },
+        {
+            "id": "43f7-1903",
+            "name": "Sữa đặc Ông Thọ nhãn vàng lon 380g",
+            "price": 30000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2526/92440/bhx/sua-dac-co-duong-ong-tho-trang-nhan-vang-lon-380g-202104151342016707_300x300.jpg",
+            "description": "",
+            "inventory": 13,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_3",
+            "classifyId": "condensed_milk"
+        },
+        {
+            "id": "4192-3a22",
+            "name": "Sữa đặc Dutch Lady nguyên kem 380g",
+            "price": 27000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2526/83920/bhx/sua-dac-co-duong-dutch-lady-nguyen-kem-lon-380g-202105221108382263.jpg",
+            "description": "",
+            "inventory": 1,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_3",
+            "classifyId": "condensed_milk"
+        },
+        {
+            "id": "2679-ce26",
+            "name": "12 hộp sữa chua cam YoMost 1 lít",
+            "price": 400000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2944/232069/bhx/thung-12-hop-sua-chua-uong-huong-cam-yomost-1-lit-202104120317513778_300x300.jpg",
+            "description": "",
+            "inventory": 133,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_4",
+            "classifyId": "yogurt"
+        },
+        {
+            "id": "48ff-881d",
+            "name": "48 hộp sữa chua TH việt quất 180ml",
+            "price": 382000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2944/85862/bhx/thung-48-hop-sua-chua-uong-huong-viet-quat-th-true-yogurt-180ml-202104291659044118_300x300.jpg",
+            "description": "",
+            "inventory": 25,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_4",
+            "classifyId": "yogurt"
+        },
+        {
+            "id": "1df1-6a23",
+            "name": "Thùng 48 hộp sữa chua dâu TH 180ml",
+            "price": 382000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2944/85871/bhx/thung-48-hop-sua-chua-uong-huong-dau-th-true-yogurt-180ml-202104091514497770_300x300.jpg",
+            "description": "",
+            "inventory": 97,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_4",
+            "classifyId": "yogurt"
+        },
+        {
+            "id": "be2c-2c53",
+            "name": "Thùng 48 hộp sữa chua cam TH 180ml",
+            "price": 382000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2944/85870/bhx/thung-48-hop-sua-chua-uong-huong-cam-th-true-yogurt-180ml-202104120314096882_300x300.jpg",
+            "description": "",
+            "inventory": 189,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_4",
+            "classifyId": "yogurt"
+        },
+        {
+            "id": "585a-dc99",
+            "name": "Thùng 48 hộp cacao Vita dâu 180ml",
+            "price": 400000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2945/136268/bhx/thung-48-hop-cacao-uong-lien-huong-dau-vita-dairy-180ml-202104092310263930_300x300.jpg",
+            "description": "",
+            "inventory": 110,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_5",
+            "classifyId": "barley_drink"
+        },
+        {
+            "id": "4d5e-21f1",
+            "name": "Thùng 48 hộp sữa Ovaltine 180ml",
+            "price": 336000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2945/196066/bhx/thung-48-hop-thuc-uong-lua-mach-huong-vi-socola-ovaltine-dha-180ml-202104091442280850_300x300.jpg",
+            "description": "",
+            "inventory": 248,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_5",
+            "classifyId": "barley_drink"
+        },
+        {
+            "id": "1a52-97e7",
+            "name": "Thùng 24 lon sữa Milo Active 240ml",
+            "price": 326000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2945/200666/bhx/thung-24-lon-sua-lua-mach-milo-active-go-240ml-202104091340155060_300x300.jpg",
+            "description": "",
+            "inventory": 213,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_5",
+            "classifyId": "barley_drink"
+        },
+        {
+            "id": "3a23-c02e",
+            "name": "Thùng 48 hộp sữa lúa mạch Milo 180ml",
+            "price": 323000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2945/201566/bhx/thung-48-hop-thuc-uong-lua-mach-it-duong-milo-active-go-180ml-202105061205456739.jpg",
+            "description": "",
+            "inventory": 279,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_5",
+            "classifyId": "barley_drink"
+        },
+        {
+            "id": "cca8-4564",
+            "name": "Ngũ cốc gạo lứt Best Choice 450g",
+            "price": 60000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8286/235659/bhx/thuc-pham-bo-sung-ngu-coc-gao-lut-huyet-rong-best-choice-goi-450g-202103101703132986_300x300.jpg",
+            "description": "",
+            "inventory": 9,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_6",
+            "classifyId": "cereals"
+        },
+        {
+            "id": "10a0-5ae9",
+            "name": "Bột sữa sen Sen Việt hộp 300g",
+            "price": 140000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8286/231690/bhx/bot-sua-sen-sen-viet-hop-300g-202103020951003704_300x300.jpg",
+            "description": "",
+            "inventory": 31,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_6",
+            "classifyId": "cereals"
+        },
+        {
+            "id": "2bd6-2fdf",
+            "name": "Bột ca cao hoà tan 5in1 Gama 324g",
+            "price": 105000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8286/225099/bhx/bot-ca-cao-5in1-gama-hop-324g-202103022304207818_300x300.jpg",
+            "description": "",
+            "inventory": 274,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_6",
+            "classifyId": "cereals"
+        },
+        {
+            "id": "05c0-6007",
+            "name": "Bột socola Vietnamcacao 300g",
+            "price": 94000,
+            "image": "https://cdn.tgdd.vn/Products/Images/8286/222169/bhx/bot-ca-cao-vietnamcacao-hot-chocolate-white-hop-300g-202103022227046433_300x300.jpg",
+            "description": "",
+            "inventory": 162,
+            "date": "",
+            "categoryId": 2,
+            "codeId": "2_6",
+            "classifyId": "cereals"
+        },
+        {
+            "id": "e0c7-1ad3",
+            "name": "Mì Nongshim kimchi ramyun gói 120g",
+            "price": 16800,
+            "image": "https://cdn.tgdd.vn/Products/Images/2565/87669/bhx/mi-nongshim-kimchi-ramyun-goi-120g-202102282128307945_300x300.jpg",
+            "description": "",
+            "inventory": 178,
+            "date": "",
+            "categoryId": 3,
+            "codeId": "3_1",
+            "classifyId": "mianlien"
+        },
+        {
+            "id": "8236-b6c3",
+            "name": "Mì tương đen Bắc Kinh Ottogi 135g",
+            "price": 10600,
+            "image": "https://cdn.tgdd.vn/Products/Images/2565/200040/bhx/mi-tuong-den-bac-kinh-ottogi-goi-135g-202102282138571221_300x300.jpg",
+            "description": "",
+            "inventory": 131,
+            "date": "",
+            "categoryId": 3,
+            "codeId": "3_1",
+            "classifyId": "mianlien"
+        },
+        {
+            "id": "5ed7-6fd5",
+            "name": "Mì nước vị kim chi Ottogi gói 120g",
+            "price": 12900,
+            "image": "https://cdn.tgdd.vn/Products/Images/2565/200059/bhx/mi-kim-chi-ottogi-goi-120g-202102282118338505_300x300.jpg",
+            "description": "",
+            "inventory": 144,
+            "date": "",
+            "categoryId": 3,
+            "codeId": "3_1",
+            "classifyId": "mianlien"
+        },
+        {
+            "id": "9399-74c0",
+            "name": "Mì hương vị bò hầm Ottogi gói 120g",
+            "price": 12300,
+            "image": "https://cdn.tgdd.vn/Products/Images/2565/206254/bhx/mi-bo-ham-ottogi-goi-120g-202102282101056035_300x300.jpg",
+            "description": "",
+            "inventory": 247,
+            "date": "",
+            "categoryId": 3,
+            "codeId": "3_1",
+            "classifyId": "mianlien"
+        },
+        {
+            "id": "fafe-a077",
+            "name": "Cháo ếch đậu hà lan Cây Thị 260g",
+            "price": 24000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2564/229449/bhx/chao-tuoi-ech-dau-ha-lan-cay-thi-goi-260g-202102251707025713_300x300.jpg",
+            "description": "",
+            "inventory": 148,
+            "date": "",
+            "categoryId": 3,
+            "codeId": "3_2",
+            "classifyId": "chaoanlien"
+        },
+        {
+            "id": "01ec-7fc3",
+            "name": "Cháo tươi cá hồi Cây Thị gói 260g",
+            "price": 25500,
+            "image": "https://cdn.tgdd.vn/Products/Images/2564/200033/bhx/chao-tuoi-ca-hoi-cay-thi-goi-260g-202102251706339459_300x300.jpg",
+            "description": "",
+            "inventory": 192,
+            "date": "",
+            "categoryId": 3,
+            "codeId": "3_2",
+            "classifyId": "chaoanlien"
+        },
+        {
+            "id": "e0c4-c556",
+            "name": "Cháo tươi yến hạt sen Cây Thị 260g",
+            "price": 35000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2564/229442/bhx/chao-tuoi-yen-hat-sen-la-dua-cay-thi-goi-260g-202102251713299946_300x300.jpg",
+            "description": "",
+            "inventory": 101,
+            "date": "",
+            "categoryId": 3,
+            "codeId": "3_2",
+            "classifyId": "chaoanlien"
+        },
+        {
+            "id": "9e74-1de8",
+            "name": "Cháo tươi SG Food gà & cà rốt 240g",
+            "price": 19600,
+            "image": "https://cdn.tgdd.vn/Products/Images/2564/136233/bhx/chao-tuoi-sg-food-baby-ga-va-ca-rot-goi-240g-202107061308086750.jpg",
+            "description": "",
+            "inventory": 154,
+            "date": "",
+            "categoryId": 3,
+            "codeId": "3_2",
+            "classifyId": "chaoanlien"
+        },
+        {
+            "id": "10fa-53ed",
+            "name": "Topokki truyền thống O'food 140g",
+            "price": 26500,
+            "image": "https://cdn.tgdd.vn/Products/Images/7162/223782/bhx/banh-gao-topokki-ofood-vi-truyen-thong-goi-140g-202104262333069309_300x300.jpg",
+            "description": "",
+            "inventory": 241,
+            "date": "",
+            "categoryId": 3,
+            "codeId": "3_3",
+            "classifyId": "banhgaohanquoc"
+        },
+        {
+            "id": "d75f-e84b",
+            "name": "Bánh gạo Pink Rocket Original 120g",
+            "price": 37500,
+            "image": "https://cdn.tgdd.vn/Products/Images/7162/220549/bhx/banh-gao-pink-rocket-topokki-vi-truyen-thong-ly-120g-202104262334145817_300x300.jpg",
+            "description": "",
+            "inventory": 83,
+            "date": "",
+            "categoryId": 3,
+            "codeId": "3_3",
+            "classifyId": "banhgaohanquoc"
+        },
+        {
+            "id": "6b54-b651",
+            "name": "Tokbokki cay ngọt Yopokki ly 140g",
+            "price": 41400,
+            "image": "https://cdn.tgdd.vn/Products/Images/7162/194776/bhx/banh-gao-tokbokki-yopokki-vi-cay-ngot-ly-140g-202103040230085961_300x300.jpg",
+            "description": "",
+            "inventory": 121,
+            "date": "",
+            "categoryId": 3,
+            "codeId": "3_3",
+            "classifyId": "banhgaohanquoc"
+        },
+        {
+            "id": "824b-eb7e",
+            "name": "Bánh gạo chả cá xốt dầu mè 148g",
+            "price": 49500,
+            "image": "https://cdn.tgdd.vn/Products/Images/7162/227062/bhx/banh-gao-cha-ca-phuc-thinh-food-xot-dau-me-hop-148g-202104262331581175_300x300.jpg",
+            "description": "",
+            "inventory": 122,
+            "date": "",
+            "categoryId": 3,
+            "codeId": "3_3",
+            "classifyId": "banhgaohanquoc"
+        },
+        {
+            "id": "77be-05cb",
+            "name": "Đường tinh luyện trắng LIN gói 1kg",
+            "price": 21000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2804/231452/bhx/duong-tinh-luyen-lin-goi-1kg-202104200915188328_300x300.jpg",
+            "description": "",
+            "inventory": 101,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_1",
+            "classifyId": "spice"
+        },
+        {
+            "id": "059d-7e3f",
+            "name": "Muối sả ớt Tinh Nguyên hũ 90g",
+            "price": 12000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2803/174526/bhx/muoi-sa-tinh-nguyen-hu-90g-202104200953313820_300x300.jpg",
+            "description": "",
+            "inventory": 1,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_1",
+            "classifyId": "spice"
+        },
+        {
+            "id": "c46f-9be3",
+            "name": "Muối sạch Visaco 777 gói 700g",
+            "price": 6400,
+            "image": "https://cdn.tgdd.vn/Products/Images/2803/77343/bhx/muoi-sach-visaco-777-goi-700g-202104200951004369_300x300.jpg",
+            "description": "",
+            "inventory": 285,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_1",
+            "classifyId": "spice"
+        },
+        {
+            "id": "d51f-7743",
+            "name": "Muối sạch Visaco 555 gói 500g",
+            "price": 4400,
+            "image": "https://cdn.tgdd.vn/Products/Images/2803/77344/bhx/muoi-sach-visaco-555-goi-500g-202104200951117410_300x300.jpg",
+            "description": "",
+            "inventory": 296,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_1",
+            "classifyId": "spice"
+        },
+        {
+            "id": "35f8-dc82",
+            "name": "Dầu ăn thực vật Mommy Buddy 1 lít",
+            "price": 38000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2286/163107/bhx/dau-an-thuong-hang-mommy-buddy-chai-1-lit-202104141656183652_300x300.jpg",
+            "description": "",
+            "inventory": 260,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_2",
+            "classifyId": "cooking_oil"
+        },
+        {
+            "id": "fb56-4f13",
+            "name": "Dầu đậu nành Janbee can 2 lít",
+            "price": 93000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2286/211349/bhx/dau-dau-nanh-tinh-luyen-janbee-can-2-lit-202104141650053359_300x300.jpg",
+            "description": "",
+            "inventory": 232,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_2",
+            "classifyId": "cooking_oil"
+        },
+        {
+            "id": "bf3b-5b61",
+            "name": "Dầu ăn Tường An Nutri Plus 1 lít",
+            "price": 46000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2286/224712/bhx/dau-an-tuong-an-cooking-oil-nutri-plus-chai-1-lit-202105201315341396_300x300.jpg",
+            "description": "",
+            "inventory": 158,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_2",
+            "classifyId": "cooking_oil"
+        },
+        {
+            "id": "a41b-6cb6",
+            "name": "Dầu hạt phỉ Monini chai nhỏ 250ml",
+            "price": 291000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2286/222061/bhx/dau-hat-phi-monini-chai-250ml-202104141607587919_300x300.jpg",
+            "description": "",
+            "inventory": 226,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_2",
+            "classifyId": "cooking_oil"
+        },
+        {
+            "id": "aa61-3b58",
+            "name": "Hạt nêm tôm thịt Chinsu gói 800g",
+            "price": 42000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2806/198862/bhx/hat-nem-ngot-tom-thom-thit-chinsu-goi-800g-202104201431075299_300x300.jpg",
+            "description": "",
+            "inventory": 21,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_3",
+            "classifyId": "hatnembotngot"
+        },
+        {
+            "id": "9b1e-56fa",
+            "name": "Hạt nêm thịt heo Delly Cook 400g",
+            "price": 25000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2806/244500/bhx/hat-nem-thit-than-xuong-ong-tuy-delly-cook-goi-400g-202107070124318372_300x300.jpg",
+            "description": "",
+            "inventory": 203,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_3",
+            "classifyId": "hatnembotngot"
+        },
+        {
+            "id": "5f9b-1272",
+            "name": "Hạt nêm thịt heo Delly Cook 900g",
+            "price": 55000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2806/244505/bhx/hat-nem-thit-than-xuong-ong-tuy-delly-cook-goi-900g-202107070126120797_300x300.jpg",
+            "description": "",
+            "inventory": 171,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_3",
+            "classifyId": "hatnembotngot"
+        },
+        {
+            "id": "0d95-8b23",
+            "name": "Hạt nêm 25 dưỡng chất Chinsu 400g",
+            "price": 28000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2806/232384/bhx/hat-nem-25-duong-chat-chinsu-goi-400g-202104291509544997_300x300.jpg",
+            "description": "",
+            "inventory": 136,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_3",
+            "classifyId": "hatnembotngot"
+        },
+        {
+            "id": "6568-1eb2",
+            "name": "Nước mắm Liên Thành nhãn đỏ 900ml",
+            "price": 26000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2289/82782/bhx/nuoc-mam-truyen-thong-lien-thanh-nhan-do-chai-900ml-202104191506188213_300x300.jpg",
+            "description": "",
+            "inventory": 69,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_4",
+            "classifyId": "fish_sauce"
+        },
+        {
+            "id": "4acf-ee78",
+            "name": "Nước mắm cá cơm Thuận Phát 750ml",
+            "price": 29000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2289/221110/bhx/nuoc-mam-ca-com-than-thuan-phat-chai-750ml-202104191525241037_300x300.jpg",
+            "description": "",
+            "inventory": 273,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_4",
+            "classifyId": "fish_sauce"
+        },
+        {
+            "id": "dffa-c7f0",
+            "name": "Nước chấm cá cơm Phúc Sơn 900ml",
+            "price": 17000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2289/244514/bhx/nuoc-cham-ca-com-phuc-son-chai-900ml-202107100316320016_300x300.jpg",
+            "description": "",
+            "inventory": 277,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_4",
+            "classifyId": "fish_sauce"
+        },
+        {
+            "id": "65a8-5d91",
+            "name": "Nước mắm Phú Quốc Nam Ngư 500ml",
+            "price": 55500,
+            "image": "https://cdn.tgdd.vn/Products/Images/2289/112111/bhx/nuoc-mam-nam-ngu-phu-quoc-32-do-dam-chai-500ml-202104191446122788_300x300.jpg",
+            "description": "",
+            "inventory": 103,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_4",
+            "classifyId": "fish_sauce"
+        },
+        {
+            "id": "99a7-5851",
+            "name": "Nước mắm Liên Thành nhãn đỏ 900ml",
+            "price": 26000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2289/82782/bhx/nuoc-mam-truyen-thong-lien-thanh-nhan-do-chai-900ml-202104191506188213_300x300.jpg",
+            "description": "",
+            "inventory": 254,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_5",
+            "classifyId": "chili_sauce"
+        },
+        {
+            "id": "68dd-f8e7",
+            "name": "Nước mắm cá cơm Thuận Phát 750ml",
+            "price": 29000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2289/221110/bhx/nuoc-mam-ca-com-than-thuan-phat-chai-750ml-202104191525241037_300x300.jpg",
+            "description": "",
+            "inventory": 272,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_5",
+            "classifyId": "chili_sauce"
+        },
+        {
+            "id": "7810-83a9",
+            "name": "Nước chấm cá cơm Phúc Sơn 900ml",
+            "price": 17000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2289/244514/bhx/nuoc-cham-ca-com-phuc-son-chai-900ml-202107100316320016_300x300.jpg",
+            "description": "",
+            "inventory": 22,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_5",
+            "classifyId": "chili_sauce"
+        },
+        {
+            "id": "659e-a0a5",
+            "name": "Nước mắm Phú Quốc Nam Ngư 500ml",
+            "price": 55500,
+            "image": "https://cdn.tgdd.vn/Products/Images/2289/112111/bhx/nuoc-mam-nam-ngu-phu-quoc-32-do-dam-chai-500ml-202104191446122788_300x300.jpg",
+            "description": "",
+            "inventory": 210,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_5",
+            "classifyId": "chili_sauce"
+        },
+        {
+            "id": "fa1c-1757",
+            "name": "Nước tương Lee Kum Kee 500ml",
+            "price": 47000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2683/79034/bhx/nuoc-tuong-thuong-hang-lee-kum-kee-chai-500ml-202104191412582899_300x300.jpg",
+            "description": "",
+            "inventory": 55,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_6",
+            "classifyId": "soy_sauce"
+        },
+        {
+            "id": "faf5-0799",
+            "name": "Nước tương đậm đặc Maggi 700ml",
+            "price": 30400,
+            "image": "https://cdn.tgdd.vn/Products/Images/2683/76548/bhx/nuoc-tuong-dau-nanh-dam-dac-maggi-chai-700ml-202104191414162279_300x300.jpg",
+            "description": "",
+            "inventory": 208,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_6",
+            "classifyId": "soy_sauce"
+        },
+        {
+            "id": "d7a0-9d3b",
+            "name": "Nước tương đậu nành Maggi 700ml",
+            "price": 26300,
+            "image": "https://cdn.tgdd.vn/Products/Images/2683/79060/bhx/nuoc-tuong-dau-nanh-maggi-chai-700ml-202104191412409895_300x300.jpg",
+            "description": "",
+            "inventory": 153,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_6",
+            "classifyId": "soy_sauce"
+        },
+        {
+            "id": "b107-f31a",
+            "name": "Nước tương đậu Lee Kum Kee 500ml",
+            "price": 26000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2683/199122/bhx/nuoc-tuong-dau-nanh-lee-kum-kee-chai-500ml-202104191409460955_300x300.jpg",
+            "description": "",
+            "inventory": 195,
+            "date": "",
+            "categoryId": 4,
+            "codeId": "4_6",
+            "classifyId": "soy_sauce"
+        },
+        {
+            "id": "d6aa-db32",
+            "name": "24 chai nước ngọt Fanta cam 390ml",
+            "price": 155000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2443/195229/bhx/24-chai-nuoc-ngot-fanta-huong-cam-390ml-202104241015516421_300x300.jpg",
+            "description": "",
+            "inventory": 160,
+            "date": "",
+            "categoryId": 5,
+            "codeId": "5_1",
+            "classifyId": "soda"
+        },
+        {
+            "id": "89fe-bd8a",
+            "name": "Thùng 24 chai Chương Dương 390ml",
+            "price": 165000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2443/90814/bhx/thung-24-chai-sa-xi-chuong-duong-390ml-202103201623182836_300x300.jpg",
+            "description": "",
+            "inventory": 129,
+            "date": "",
+            "categoryId": 5,
+            "codeId": "5_1",
+            "classifyId": "soda"
+        },
+        {
+            "id": "9be5-1f51",
+            "name": "Thùng 24 chai nước Sprite 390ml",
+            "price": 155000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2443/194415/bhx/thung-24-chai-nuoc-ngot-sprite-huong-chanh-390ml-202105241008597965.jpg",
+            "description": "",
+            "inventory": 270,
+            "date": "",
+            "categoryId": 5,
+            "codeId": "5_1",
+            "classifyId": "soda"
+        },
+        {
+            "id": "7cd9-baa0",
+            "name": "Nước ngọt Fanta vị cam chai 390ml",
+            "price": 7500,
+            "image": "https://cdn.tgdd.vn/Products/Images/2443/79173/bhx/nuoc-ngot-fanta-huong-cam-390ml-202103202226561577_300x300.jpg",
+            "description": "",
+            "inventory": 113,
+            "date": "",
+            "categoryId": 5,
+            "codeId": "5_1",
+            "classifyId": "soda"
+        },
+        {
+            "id": "8f34-f763",
+            "name": "Trà túi lọc Atisô Lama 25 túi x 2g",
+            "price": 23000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2385/230385/bhx/tra-atiso-lama-hop-50g-202104212144270460_300x300.jpg",
+            "description": "",
+            "inventory": 240,
+            "date": "",
+            "categoryId": 5,
+            "codeId": "5_2",
+            "classifyId": "cafe_tea"
+        },
+        {
+            "id": "fde8-837a",
+            "name": "Trà chanh Wil hộp 16 gói x 17g",
+            "price": 27000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2385/233284/bhx/tra-chanh-wil-hop-272g-202105270928115999_300x300.jpg",
+            "description": "",
+            "inventory": 89,
+            "date": "",
+            "categoryId": 5,
+            "codeId": "5_2",
+            "classifyId": "cafe_tea"
+        },
+        {
+            "id": "3974-9837",
+            "name": "Trà ổi hồng Wil hộp 16 gói x 17g",
+            "price": 27000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2385/233285/bhx/tra-oi-hong-wil-hop-272g-202105270931214989_300x300.jpg",
+            "description": "",
+            "inventory": 27,
+            "date": "",
+            "categoryId": 5,
+            "codeId": "5_2",
+            "classifyId": "cafe_tea"
+        },
+        {
+            "id": "f01e-246b",
+            "name": "Hồng trà túi lọc Lama 25 túi x 2g",
+            "price": 27000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2385/234615/bhx/hong-tra-tui-loc-lama-hop-50g-202102061707579181_300x300.jpg",
+            "description": "",
+            "inventory": 67,
+            "date": "",
+            "categoryId": 5,
+            "codeId": "5_2",
+            "classifyId": "cafe_tea"
+        },
+        {
+            "id": "6d16-cd1b",
+            "name": "6 chai nước tinh khiết Lama 350ml",
+            "price": 18000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2563/227259/bhx/loc-6-chai-nuoc-tinh-khiet-lama-350ml-202103032306223804_300x300.jpg",
+            "description": "",
+            "inventory": 282,
+            "date": "",
+            "categoryId": 5,
+            "codeId": "5_3",
+            "classifyId": "water"
+        },
+        {
+            "id": "8435-9a26",
+            "name": "Nước khoáng Leo lựu dâu nho 330ml",
+            "price": 9300,
+            "image": "https://cdn.tgdd.vn/Products/Images/2563/228211/bhx/nuoc-khoang-co-ga-leo-vi-luu-dau-nho-330ml-202103032259080534_300x300.jpg",
+            "description": "",
+            "inventory": 133,
+            "date": "",
+            "categoryId": 5,
+            "codeId": "5_3",
+            "classifyId": "water"
+        },
+        {
+            "id": "ab5b-c503",
+            "name": "Nước tinh khiết Lama chai 350ml",
+            "price": 3000,
+            "image": "https://cdn.tgdd.vn/Products/Images/2563/227258/bhx/nuoc-tinh-khiet-lama-350ml-202103032250433789_300x300.jpg",
+            "description": "",
+            "inventory": 268,
+            "date": "",
+            "categoryId": 5,
+            "codeId": "5_3",
+            "classifyId": "water"
+        },
+        {
+            "id": "0107-764f",
+            "name": "6 chai nước tinh khiết Lama 500ml",
+            "price": 20500,
+            "image": "https://cdn.tgdd.vn/Products/Images/2563/227262/bhx/loc-6-chai-nuoc-tinh-khiet-lama-500ml-202103032250323954_300x300.jpg",
+            "description": "",
+            "inventory": 287,
+            "date": "",
+            "categoryId": 5,
+            "codeId": "5_3",
+            "classifyId": "water"
+        },
+        {
+            "id": "71f9-8864",
+            "name": "Snack khoai tây vị cua ớt Peke 80g",
+            "price": 20900,
+            "image": "https://cdn.tgdd.vn/Products/Images/3364/219748/bhx/snack-khoai-tay-peke-potato-chips-vi-cua-xao-ot-lon-80g-202104291435006467_300x300.jpg",
+            "description": "",
+            "inventory": 38,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_1",
+            "classifyId": "snack"
+        },
+        {
+            "id": "c3fe-5d47",
+            "name": "Snack khoai tây Peke Potato 80g",
+            "price": 20900,
+            "image": "https://cdn.tgdd.vn/Products/Images/3364/212677/bhx/snack-khoai-tay-peke-potato-chips-vi-truyen-thong-lon-80g-202104291436455205_300x300.jpg",
+            "description": "",
+            "inventory": 289,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_1",
+            "classifyId": "snack"
+        },
+        {
+            "id": "5099-0a49",
+            "name": "Khoai tây chiên ít béo Amica 130g",
+            "price": 95000,
+            "image": "https://cdn.tgdd.vn/Products/Images/3364/240551/bhx/khoai-tay-chien-it-beo-eldorada-amica-goi-130g-202106010931175096_300x300.jpg",
+            "description": "",
+            "inventory": 9,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_1",
+            "classifyId": "snack"
+        },
+        {
+            "id": "27a0-f846",
+            "name": "Khoai tây thịt nướng Eldorada 130g",
+            "price": 95000,
+            "image": "https://cdn.tgdd.vn/Products/Images/3364/241282/bhx/khoai-tay-chien-it-beo-vi-thit-nuong-eldorada-amica-goi-130g-202106030958259666_300x300.jpg",
+            "description": "",
+            "inventory": 291,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_1",
+            "classifyId": "snack"
+        },
+        {
+            "id": "c884-0bc1",
+            "name": "Bánh phô mai Nissin Sagu Keju 110g",
+            "price": 26000,
+            "image": "https://cdn.tgdd.vn/Products/Images/3357/216801/bhx/banh-quy-pho-mai-nissin-sagu-keju-goi-110g-202104261439210266_300x300.jpg",
+            "description": "",
+            "inventory": 187,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_2",
+            "classifyId": "cookies"
+        },
+        {
+            "id": "11b3-12be",
+            "name": "Bánh yến mạch sữa Fiano hộp 100g",
+            "price": 19000,
+            "image": "https://cdn.tgdd.vn/Products/Images/3357/232154/bhx/banh-yen-mach-sua-fiano-hop-100g-202104261417542120_300x300.jpg",
+            "description": "",
+            "inventory": 83,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_2",
+            "classifyId": "cookies"
+        },
+        {
+            "id": "41ba-7d33",
+            "name": "Bánh quy bơ Andersen's 10 góix10g",
+            "price": 19900,
+            "image": "https://cdn.tgdd.vn/Products/Images/3357/212664/bhx/banh-quy-bo-truyen-thong-andersens-danish-hop-100g-202104261112073124_300x300.jpg",
+            "description": "",
+            "inventory": 183,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_2",
+            "classifyId": "cookies"
+        },
+        {
+            "id": "0f70-1fef",
+            "name": "Bánh quy Andersen's 10 gói x 10g",
+            "price": 19900,
+            "image": "https://cdn.tgdd.vn/Products/Images/3357/212672/bhx/banh-quy-yen-mach-chocolate-sua-andersens-hop-100g-202104261439414414_300x300.jpg",
+            "description": "",
+            "inventory": 129,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_2",
+            "classifyId": "cookies"
+        },
+        {
+            "id": "3e58-008c",
+            "name": "Bánh kem trứng hộp 20 cái x 23.5g",
+            "price": 99000,
+            "image": "https://cdn.tgdd.vn/Products/Images/3358/109401/bhx/banh-kem-trung-custas-hop-470g-20-cai-202104241318407891_300x300.jpg",
+            "description": "",
+            "inventory": 181,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_3",
+            "classifyId": "sponge_cake"
+        },
+        {
+            "id": "7c1c-9940",
+            "name": "Bánh kem phô mai dâu 12 cáix23.5g",
+            "price": 63500,
+            "image": "https://cdn.tgdd.vn/Products/Images/3358/195584/bhx/banh-kem-pho-mai-dau-custas-hop-282g-12-cai-202104241336543568_300x300.jpg",
+            "description": "",
+            "inventory": 176,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_3",
+            "classifyId": "sponge_cake"
+        },
+        {
+            "id": "a1a4-386b",
+            "name": "Bánh nhân kem sữa 12 cái x 23.5g",
+            "price": 63000,
+            "image": "https://cdn.tgdd.vn/Products/Images/3358/85465/bhx/banh-kem-sua-custas-hop-282g-12-cai-202104241320237473_300x300.jpg",
+            "description": "",
+            "inventory": 132,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_3",
+            "classifyId": "sponge_cake"
+        },
+        {
+            "id": "11ed-6e0f",
+            "name": "Bánh kem dâu Solite 20 cáix18g",
+            "price": 62000,
+            "image": "https://cdn.tgdd.vn/Products/Images/3358/79645/bhx/banh-bong-lan-cuon-kem-vi-dau-solite-hop-360g-20-cai-202104241334383175_300x300.jpg",
+            "description": "",
+            "inventory": 186,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_3",
+            "classifyId": "sponge_cake"
+        },
+        {
+            "id": "97ad-6477",
+            "name": "Kẹo socola Ferrero 30 viên x 12.5g",
+            "price": 360000,
+            "image": "https://cdn.tgdd.vn/Products/Images/6597/233236/bhx/socola-ferrero-hop-375g-202104271026091650_300x300.jpg",
+            "description": "",
+            "inventory": 17,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_4",
+            "classifyId": "socola"
+        },
+        {
+            "id": "e58b-eb85",
+            "name": "Kẹo socola Ferrero Rocher hộp 300g",
+            "price": 354000,
+            "image": "https://cdn.tgdd.vn/Products/Images/6597/228852/bhx/socola-ferrero-hop-300g-202104271034314427_300x300.jpg",
+            "description": "",
+            "inventory": 231,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_4",
+            "classifyId": "socola"
+        },
+        {
+            "id": "ff54-5f28",
+            "name": "Socola sữa hạnh nhân Bernique 450g",
+            "price": 239000,
+            "image": "https://cdn.tgdd.vn/Products/Images/6597/236484/bhx/socola-sua-hanh-nhan-bernique-hop-450g-202104271043267387_300x300.jpg",
+            "description": "",
+            "inventory": 87,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_4",
+            "classifyId": "socola"
+        },
+        {
+            "id": "9822-d818",
+            "name": "Socola sữa hạt phỉ Bernique 450g",
+            "price": 239000,
+            "image": "https://cdn.tgdd.vn/Products/Images/6597/236483/bhx/socola-sua-hat-phi-bernique-hop-450g-202104271045070085_300x300.jpg",
+            "description": "",
+            "inventory": 46,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_4",
+            "classifyId": "socola"
+        },
+        {
+            "id": "4ff4-2724",
+            "name": "Bánh que Glico phủ kem dâu 38g",
+            "price": 17900,
+            "image": "https://cdn.tgdd.vn/Products/Images/3362/222134/bhx/banh-que-glico-pocky-phu-kem-huong-dau-hop-38g-202104241645314843_300x300.jpg",
+            "description": "",
+            "inventory": 159,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_5",
+            "classifyId": "cake_sticks"
+        },
+        {
+            "id": "85a3-4581",
+            "name": "Bánh que Glico kem trà xanh 35g",
+            "price": 17900,
+            "image": "https://cdn.tgdd.vn/Products/Images/3362/222135/bhx/banh-que-glico-pocky-phu-kem-tra-xanh-hop-35g-202104241645181625_300x300.jpg",
+            "description": "",
+            "inventory": 147,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_5",
+            "classifyId": "cake_sticks"
+        },
+        {
+            "id": "17ea-bb2f",
+            "name": "Bánh quế vị phô mai Wasuka hủ 540g",
+            "price": 68000,
+            "image": "https://cdn.tgdd.vn/Products/Images/3359/232563/bhx/banh-que-vi-pho-mai-wasuka-cigarku-hu-540g-202102010902374581_300x300.jpg",
+            "description": "",
+            "inventory": 46,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_5",
+            "classifyId": "cake_sticks"
+        },
+        {
+            "id": "0783-766c",
+            "name": "Bánh quế vị socola Wasuka hủ 540g",
+            "price": 68000,
+            "image": "https://cdn.tgdd.vn/Products/Images/3359/232559/bhx/banh-que-vi-socola-wasuka-hu-540g-202102010900092311_300x300.jpg",
+            "description": "",
+            "inventory": 251,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_5",
+            "classifyId": "cake_sticks"
+        },
+        {
+            "id": "d706-1e86",
+            "name": "Mít sấy giòn tan Rộp Rộp gói 250g",
+            "price": 70500,
+            "image": "https://cdn.tgdd.vn/Products/Images/3365/230649/bhx/mit-say-rop-rop-goi-250g-202104261006302286_300x300.jpg",
+            "description": "",
+            "inventory": 31,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_6",
+            "classifyId": "drying_fruits"
+        },
+        {
+            "id": "ec4c-80b1",
+            "name": "Chuối khô sấy dẻo Frusa gói 100g",
+            "price": 16000,
+            "image": "https://cdn.tgdd.vn/Products/Images/3365/231533/bhx/chuoi-say-deo-frusa-goi-100g-202104261008167839_300x300.jpg",
+            "description": "",
+            "inventory": 259,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_6",
+            "classifyId": "drying_fruits"
+        },
+        {
+            "id": "4a51-ebfd",
+            "name": "Hộp quà Tết Bình An Nong Lam Food",
+            "price": 489000,
+            "image": "https://cdn.tgdd.vn/Products/Images/3365/233465/bhx/hop-qua-tet-binh-an-nong-lam-food-2kg-202101142018567870_300x300.jpg",
+            "description": "",
+            "inventory": 134,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_6",
+            "classifyId": "drying_fruits"
+        },
+        {
+            "id": "dce4-e20a",
+            "name": "Hộp quà Tết An Khang Nong Lam Food",
+            "price": 389000,
+            "image": "https://cdn.tgdd.vn/Products/Images/3365/233461/bhx/hop-qua-tet-an-khang-nong-lam-food-2kg-202101142017441334_300x300.jpg",
+            "description": "",
+            "inventory": 252,
+            "date": "",
+            "categoryId": 6,
+            "codeId": "6_6",
+            "classifyId": "drying_fruits"
+        }
+    ]
+}
