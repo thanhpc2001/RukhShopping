@@ -8,7 +8,9 @@ import * as msg from './../../../constants/Message'
 class CardBoard extends Component {
     render() {
         const { cart } = this.props
-        return (
+        return <React.Fragment>
+            {this.showNumOfCart(cart)}
+
             <div className="cart-board">
                 <p>{cart.length > 0 ? 'Sản phẩm đã thêm' : msg.MSG_CART_EMPTY}</p>
                 <ul className="cart-board-list">
@@ -16,7 +18,7 @@ class CardBoard extends Component {
                 </ul>
                 <Link to="/cart" className="card-board-review">Xem giỏ hàng</Link>
             </div>
-        );
+        </React.Fragment>
     }
 
     showCartItem(cart) {
@@ -37,6 +39,14 @@ class CardBoard extends Component {
                 <img src={image} alt="Empty Cart" />
             </div>
         )
+    }
+
+    showNumOfCart(cart) {
+        const numOfCart = cart.length
+        if (numOfCart > 0)
+            return (
+                <div className="num-of-list-cart">{numOfCart}</div>
+            )
     }
 }
 

@@ -35,6 +35,7 @@ class HeaderRightCol extends Component {
                     </li>
                     <li className="icons" id="cart-btn" onClick={(e) => this.handleToggleActive(e)}>
                         <ion-icon name="cart" />
+                        {/* <div className="num-of-list-cart">3</div> */}
                         <CardBoard />
                     </li>
                     <li className="icons" id="user-btn" onClick={(e) => this.handleToggleActive(e)}>

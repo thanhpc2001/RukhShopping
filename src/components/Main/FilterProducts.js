@@ -8,7 +8,7 @@ class FilterProducts extends Component {
             <React.Fragment>
                 <div className="col wide l-12 m-12 c-12">
                     <div className="filter-products">
-                        <ProductsRelative />
+                        <ProductsRelative data={this.props.data} classifyId={this.props.classifyId} setClassifyId={this.props.setClassifyId} />
                         <SortPrice />
                     </div>
                 </div>

@@ -745,6 +745,7 @@ li {
     border-radius: 3px;
     margin-right: 12px;
     margin-bottom: 8px;
+    font-size: 16px;
 }
 
 .sort-price {
@@ -891,6 +892,30 @@ li {
 .product-item-buy-btn:hover {
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+
+.num-of-list-cart {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -4%;
+    right: -8%;
+    width: 24px;
+    height: 20px;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.header-right li.icons:hover .num-of-list-cart,
+.header-right li.icons.active .num-of-list-cart {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
 }
 
 .product-item-cart-btn {

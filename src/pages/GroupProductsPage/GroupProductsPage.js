@@ -11,6 +11,7 @@ class GroupProductsPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            classifyId: 0,
             data: []
         }
     }
@@ -45,14 +46,22 @@ class GroupProductsPage extends Component {
         res.data.forEach(async classify => {
             const temp = await apiCaller(`classifies/${classify.id}/products`, 'get', null)
             data = [...data, { classify, products: temp.data }]
-            this.setState({ data })
+            this.setState({ classifyId: this.state.classifyId || 0, data })
         })
 
     }
 
+    setClassifyId = (id) => {
+        this.setState({
+            classifyId: id,
+            data: this.state.data
+        })
+    }
+
     render() {
         // var { products } = this.props
-        var { data } = this.state
+        var { classifyId, data } = this.state
+        // console.log(data, classifyId)
         // data.length>0 ? console.log(data[0].products) : console.log('hi')
         // var { sort } = this.props
         // if (sort && data.length>0) {
@@ -65,9 +74,9 @@ class GroupProductsPage extends Component {
         return (
             <React.Fragment>
                 <div className="row">
-                    <FilterProducts />
-                    {data.length > 0 ? this.showProducts(data[0].products) : null}
-                    <ShowMoreProducts numOfProducts={data.length > 0 ? data[0].products.length : null} />
+                    <FilterProducts data={data} classifyId={classifyId} setClassifyId={this.setClassifyId} />
+                    {data.length > 0 ? this.showProducts(data[classifyId].products) : null}
+                    <ShowMoreProducts numOfProducts={data.length > 0 ? data[classifyId].products.length : null} />
                 </div>
             </React.Fragment>
         );

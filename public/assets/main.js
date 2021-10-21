@@ -19,8 +19,7 @@ document.addEventListener('click', (e) => {
     const iconsActive = $('.icons.active')
     const sortPriceBtnActive = $('.sort-price-btn.active')
     const categoryActive = $('.category.active')
-    const inputSearchActive = $('input.header-search-input.active')
-    e.target.matches('i#js-icon-trash') && console.log(2)
+    const mobileInputSearchActive = $('.mobile-header-search-input.active')
 
     if (e.target.className === 'hydrated' || !e.target.matches('.icons') && !e.target.parentElement.matches('.icons') && !e.target.matches('.mobile-header-search-input')) {
         if (iconsActive) {
@@ -39,6 +38,9 @@ document.addEventListener('click', (e) => {
     }
     if (e.target.className === 'hydrated' || !e.target.matches('input.header-search-input') && !e.target.matches('.history-search ion-icon')) {
         $('input.header-search-input').classList.remove('active')
+        // if(mobileInputSearchActive){
+        //     mobileInputSearchActive.classList.remove('active')
+        // }
     }
 })
 
