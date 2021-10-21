@@ -4,6 +4,7 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
 import GroupProductsPage from './pages/GroupProductsPage/GroupProductsPage'
 import CartPage from './pages/CartPage/CartPage'
 import BuyNowPage from './pages/BuyNowPage/BuyNowPage'
+import ResultsSearch from './pages/ResultsSearch/ResultsSearch'
 
 const routes = [
     {
@@ -12,9 +13,9 @@ const routes = [
         main: () => <HomePage />
     },
     {
-        path: '/products',
+        path: '/codes/:id/products',
         exact: false,
-        main: () => <GroupProductsPage />
+        main: ({ match }) => <GroupProductsPage match={match} />
     },
     {
         path: '/cart',
@@ -25,6 +26,11 @@ const routes = [
         path: '/product/:id/buy-now',
         exact: false,
         main: ({ match }) => <BuyNowPage match={match} />
+    },
+    {
+        path: '/results',
+        exact: false,
+        main: () => <ResultsSearch />
     },
     {
         path: '',

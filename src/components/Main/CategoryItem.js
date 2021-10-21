@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 
+import { connect } from 'react-redux'
+
+
 import CategorySubItem from './CategorySubItem'
 
 class CategoryItem extends Component {
+
+    componentDidMount(){
+        // console.log('ss',this.props.categories)
+    }
 
     handleToggleActive = (e) => {
         if (e.target.matches('.category-item-header')) {
@@ -14,28 +21,32 @@ class CategoryItem extends Component {
     }
 
     render() {
-
-        const { item, codes } = this.props
+        const {category,codes}=this.props.item
         return (
             <li className="category-item">
                 <div href="/products" className="category-item-header" onClick={this.handleToggleActive}>
-                    {item.name}
+                    {category.name}
                     <ion-icon name="caret-down" />
                 </div>
-                <CategorySubItem  item={item} code={this.getCodes(codes, item.id)}/>
+                <CategorySubItem codes={codes}/>
             </li>
         );
     }
+}
 
-    getCodes = (codes, categoryId) => {
-        var result = []
-        if (codes.length > 0) {
-            codes.forEach(code => {
-                code.categoryId === categoryId && result.push(code)
-            })
-        }
-        return result
+const mapStateToProp = state => {
+    return {
+        categories: state.categories
     }
 }
 
-export default CategoryItem;
+const mapDispatchToProps = (dispatch, props) => {
+    return {
+        // onFetchCategories: () => {
+        //     dispatch(actGetCategoryRequest())
+        // }
+    }
+}
+
+export default connect(mapStateToProp, mapDispatchToProps)(CategoryItem)
+// export default CategoryItem;

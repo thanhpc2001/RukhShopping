@@ -25,7 +25,8 @@ class HeaderRightCol extends Component {
             <React.Fragment>
                 <ul className="header-right">
                     <li className="icons" id="mobile-search-btn" onClick={(e) => this.handleToggleActive(e)}>
-                        <ion-icon name="search" />
+                        {/* <ion-icon name="search" /> */}
+                        <ion-icon name="search-outline"></ion-icon>
                         <MobileSearch />
                     </li>
                     <li className="icons" id="notify-btn" onClick={(e) => this.handleToggleActive(e)}>

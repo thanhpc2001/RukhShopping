@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
+// import apiCaller from './../../utils/apiCaller'
+
 import { connect } from 'react-redux'
-import { actGetCategoryRequest, actGetCodesRequest } from './../../actions/index'
+// import { actFetchCategoriesRequest } from './../../actions/index'
 
 import CategoryItem from './CategoryItem'
 
 class Category extends Component {
+
+    // constructor(props) {
+    //     super(props)
+    //     this.state = {
+    //         data: []
+    //     }
+    // }
 
     handleToggleMenu = (e) => {
         const category = document.querySelector('.category')
@@ -16,13 +25,35 @@ class Category extends Component {
         category.classList.remove('active')
     }
 
-    componentDidMount() {
-        this.props.onGetCategory()
-        this.props.onGetCodes()
-    }
+    // async componentDidMount() {
+    //     const res = await apiCaller('categories', 'get', null)
+    //     var data = []
+    //     res.data.forEach(async category => {
+    //         const temp = await apiCaller(`categories/${category.id}/codes`, 'get', null)
+    //         data = [...data, { category, codes: temp.data }]
+    //         this.setState({ data })
+    //     })
+    // }
+    // componentDidMount() {
+    //     this.props.onFetchCategories()
+    // }
+
+    // async componentDidUpdate(prevProps){
+    //     if(this.props.categories!==prevProps.categories){
+    //         var data = []
+    //         const {categories}=this.props
+    //         categories.forEach(async category=>{
+    //             const temp = await apiCaller(`categories/${category.id}/codes`, 'get', null)
+    //             data = [...data, {category, codes: temp.data}]
+    //             this.setState({data})
+    //         })
+    //     }
+    // }
 
     render() {
-        var { categories, codes } = this.props
+        const { data } = this.props
+        // const {categories}=this.props
+        // console.log({categories})
         return (
             <React.Fragment>
                 <nav className="category">
@@ -32,46 +63,40 @@ class Category extends Component {
                         <ion-icon name="close" id="close-menu" onClick={this.handleCloseMenu} />
                     </div>
                     <ul className="category-list">
-                        {this.showContent(categories, codes)}
+                        {this.showContent(data)}
                     </ul>
                 </nav>
             </React.Fragment>
         );
     }
 
-    showContent = (categories, codes) => {
+    showContent(data) {
         var result = null
-        if (categories.length > 0) {
-            result = categories.map((item, index) => {
+        if (data.length > 0) {
+            result = data.map((item, index) => {
                 return <CategoryItem
                     key={index}
                     item={item}
-                    codes={codes}
                 />
             })
         }
         return result
     }
-
-    
 }
 
-const mapStateToProps = state => {
+const mapStateToProp = state => {
     return {
-        categories: state.categories,
-        codes: state.codes,
+        data: state.categories
     }
 }
 
 const mapDispatchToProps = (dispatch, props) => {
     return {
-        onGetCategory: () => {
-            dispatch(actGetCategoryRequest())
-        },
-        onGetCodes: () => {
-            dispatch(actGetCodesRequest())
-        }
+        // onFetchCategories: () => {
+        //     dispatch(actFetchCategoriesRequest())
+        // }
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Category);
+export default connect(mapStateToProp, mapDispatchToProps)(Category)
+// export default Category;

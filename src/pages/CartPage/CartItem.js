@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { actDeleteProductInCart, actUpdateProductInCart } from './../../actions/index'
 
 class CartItemPage extends Component {
@@ -16,13 +17,13 @@ class CartItemPage extends Component {
         var quantity = this.props.item.quantity > 0 ? this.props.item.quantity : this.state.quantity
         return (
             <div className="cart-product-item">
-                <div className="cart-product-item-wrapper">
+                <Link to={`/product/${product.id}/buy-now`} className="cart-product-item-wrapper">
                     <img className="cart-product-item-img" src={product.image} alt={product.name} />
                     <div className="cart-product-item-wrapper-info">
                         <h4 className="cart-product-item-name">{product.name}</h4>
                         <h5 className="cart-product-item-price">{Intl.NumberFormat('de-DE').format(product.price)} vnđ</h5>
                     </div>
-                </div>
+                </Link>
                 <div className="cart-product-item-wrapper">
                     <p>x</p>
                     <div className="cart-product-item-quantity-group">

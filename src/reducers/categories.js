@@ -4,9 +4,8 @@ var initialState = []
 
 const products = (state=initialState, action)=>{
     switch(action.type){
-        case types.FETCH_CATEGORY:
-            state = action.category
-            return [...state]
+        case types.FETCH_CATEGORIES:
+            return action.data
         default:
             return [...state]
     }

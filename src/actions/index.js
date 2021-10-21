@@ -17,48 +17,43 @@ export const actFetchProducts = (products) => {
     }
 }
 
-export const actGetProductRequest = (id) => {
-    return (dispatch) => {
-        return apiCaller(`products/${id}`, 'get', null).then(res => {
-            dispatch(actGetProduct(res.data))
-        })
-    }
-}
-
-export const actGetProduct = (product) => {
-    return {
-        type: types.GET_PRODUCT,
-        product,
-    }
-}
-
-export const actGetCategoryRequest = () => {
+export const actFetchProductOfCategoriesRequest = () => {
     return (dispatch) => {
         return apiCaller('categories', 'get', null).then(res => {
-            dispatch(actGetCategory(res.data))
+            var data = []
+            res.data.forEach(async category => {
+                const temp = await apiCaller(`categories/${category.id}/products`, 'get', null)
+                data = [...data, { category, products: temp.data }]
+                dispatch(actFetchProductOfCategories(data))
+            })
         })
     }
 }
 
-export const actGetCategory = (category) => {
+export const actFetchProductOfCategories = (data) => {
     return {
-        type: types.FETCH_CATEGORY,
-        category,
+        type: types.FETCH_PRODUCTS_OF_CATEGORIES,
+        data,
     }
 }
 
-export const actGetCodesRequest = () => {
+export const actFetchCategoriesRequest = () => {
     return (dispatch) => {
-        return apiCaller('codes', 'get', null).then(res => {
-            dispatch(actGetCodes(res.data))
+        return apiCaller('categories', 'get', null).then(res => {
+            var data = []
+            res.data.forEach(async category => {
+                const temp = await apiCaller(`categories/${category.id}/codes`, 'get', null)
+                data = [...data, { category, codes: temp.data }]
+                dispatch(actFetchCategories(data))
+            })
         })
     }
 }
 
-export const actGetCodes = (codes) => {
+export const actFetchCategories = (data) => {
     return {
-        type: types.GET_CODES,
-        codes,
+        type: types.FETCH_CATEGORIES,
+        data,
     }
 }
 
@@ -82,5 +77,19 @@ export const actUpdateProductInCart = (product, quantity) => {
         type: types.UPDATE_IN_CART,
         product,
         quantity,
+    }
+}
+
+export const actSearchProduct = (keyword)=>{
+    return {
+        type: types.SEARCH_PRODUCT,
+        keyword,
+    }
+}
+
+export const actSortProduct = (sort)=>{
+    return {
+        type: types.SORT_PRODUCT,
+        sort,
     }
 }

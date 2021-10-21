@@ -1,27 +1,30 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import { actGetProductRequest } from './../../actions/index'
+import apiCaller from './../../utils/apiCaller'
 
 class BuyNowPage extends Component {
 
     constructor(props) {
         super(props)
         this.state = {
+            product: {},
             quantity: 1
         }
     }
 
-    componentDidMount() {
-        var { match } = this.props
+    async componentDidMount() {
+        const { match } = this.props
         if (match) {
-            var id = match.params.id
-            this.props.onGetProduct(id)
+            const id = match.params.id
+            const res = await apiCaller(`products/${id}`, 'get', null)
+            this.setState({
+                product: res.data,
+                quantity: this.state.quantity
+            })
         }
     }
 
     render() {
-        var { product } = this.props
-        var { quantity } = this.state
+        var { product, quantity } = this.state
         return (
             <React.Fragment>
                 <div className="row bg-pay">
@@ -63,24 +66,11 @@ class BuyNowPage extends Component {
     onUpdateQuantity = (quantity) => {
         if (quantity > 0) {
             this.setState({
+                product: this.state.product,
                 quantity: quantity
             })
         }
     }
 }
 
-const mapStateToProps = state => {
-    return {
-        product: state.productItem
-    }
-}
-
-const mapDispatchToProps = (dispatch, props) => {
-    return {
-        onGetProduct: (id) => {
-            dispatch(actGetProductRequest(id))
-        }
-    }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(BuyNowPage);
+export default BuyNowPage;

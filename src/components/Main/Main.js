@@ -4,7 +4,16 @@ import Feature from '../Feature/Feature';
 import routes from './../../routes'
 import { Switch, Route } from 'react-router-dom';
 
+import { connect } from 'react-redux'
+import { actFetchCategoriesRequest, actFetchProductOfCategoriesRequest, actFetchProductsRequest } from './../../actions/index'
+
 class Main extends Component {
+
+    componentDidMount() {
+        this.props.onFetchCategories()
+        this.props.onFetchProductsOfCategories()
+        this.props.onFetchAllProducts()
+    }
 
     render() {
         return (
@@ -46,4 +55,18 @@ class Main extends Component {
     }
 }
 
-export default Main;
+const mapDispatchToProps = (dispatch, props) => {
+    return {
+        onFetchCategories: () => {
+            dispatch(actFetchCategoriesRequest())
+        },
+        onFetchProductsOfCategories: () => {
+            dispatch(actFetchProductOfCategoriesRequest())
+        },
+        onFetchAllProducts: () => {
+            dispatch(actFetchProductsRequest())
+        },
+    }
+}
+
+export default connect(null, mapDispatchToProps)(Main);

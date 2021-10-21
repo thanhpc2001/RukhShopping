@@ -1,83 +1,57 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
-import ProductsItem from './../../components/Main/ProductsItem';
+// import ProductsItem from './../../components/Main/ProductsItem';
 import ShowMoreProducts from './../../components/Main/ShowMoreProducts';
-import { actFetchProductsRequest } from './../../actions/index'
-import apiCaller from './../../utils/apiCaller'
+// import { actSearchProduct } from './../../actions/index'
+// import apiCaller from './../../utils/apiCaller'
+import HomePageItem from './HomePageItem'
 
 
 class HomePage extends Component {
 
-    componentDidMount() {
-        this.props.fetchAllProducts()
-    }
+    // componentDidMount() {
+    //     this.props.onSearch('')
+    // }
 
     render() {
-
-        var { products, categories } = this.props
-
+        const { data } = this.props
         return (
-            <React.Fragment>
-                <div className="row">
-                    <div className="col wide l-12 m-12 c-12">
-                        <h3 className="title-header-all-products">Thịt, cá, trứng, rau</h3>
-                    </div>
-                    {this.showProducts(products)}
-                    <ShowMoreProducts />
-                    {/* {this.showContent(categories)} */}
-                </div>
-            </React.Fragment>
+            <div className="row">
+                {this.showContent(data)}
+            </div>
         );
     }
 
-    showProducts(products) {
+    showContent(data) {
         var result = null
-        if (products.length > 0) {
-            result = products.map((product, index) => {
-                return (
-                    <ProductsItem
-                        key={index}
-                        product={product}
-                    />
-                )
+        if (data.length > 0) {
+            result = data.map((item, index) => {
+                return <React.Fragment key={index}>
+                    <div className="col wide l-12 m-12 c-12">
+                        <h3 className="title-header-all-products">{item.category.name}</h3>
+                    </div>
+                    <HomePageItem products={item.products} />
+                    <ShowMoreProducts numOfProducts={item.products.length} />
+                </React.Fragment>
             })
         }
-        return result
-    }
-
-    showContent(categories){
-        var result = null
-        result = categories.map((category,index)=>{
-            var temp
-            apiCaller(`categories/${category.id}/products`, 'get', null).then(res=>{
-                temp = this.showProducts(res.data)
-            })
-            return <React.Fragment key={index}>
-                <div className="col wide l-12 m-12 c-12">
-                        <h3 className="title-header-all-products">{category.name}</h3>
-                    </div>
-                    {temp}
-                    <ShowMoreProducts />
-            </React.Fragment>
-        })
         return result
     }
 }
 
 const mapStateToProps = state => {
     return {
-        products: state.products,
-        categories: state.categories,
+        data: state.productsOfCategories
     }
 }
 
-const mapDispatchToProps = (dispatch, props) => {
-    return {
-        fetchAllProducts: () => {
-            dispatch(actFetchProductsRequest())
-        }
-    }
-}
+// const mapDispatchToProps = (dispatch, props) => {
+//     return {
+//         onSearch: (keyword) => {
+//             dispatch(actSearchProduct(keyword))
+//         }
+//     }
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps, null)(HomePage);

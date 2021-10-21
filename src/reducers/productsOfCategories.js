@@ -1,11 +1,11 @@
-import * as types from './../constants/ActionTypes'
+import * as types from '../constants/ActionTypes'
 
 var initialState = {}
 
 const productItem = (state = initialState, action) => {
     switch (action.type) {
-        case types.GET_PRODUCT:
-            return action.product
+        case types.FETCH_PRODUCTS_OF_CATEGORIES:
+            return action.data
         default:
             return state
     }

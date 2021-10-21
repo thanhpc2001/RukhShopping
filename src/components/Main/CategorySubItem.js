@@ -14,25 +14,25 @@ class CategorySubItem extends Component {
     }
 
     render() {
-        var { code } = this.props
+        var { codes } = this.props
         return (
             <ul className="category-item-sub-list">
-                {this.showContents(code)}
+                {this.showContents(codes)}
             </ul>
         );
     }
 
-    showContents = (code) => {
+    showContents = (codes) => {
         var result = null
-        if (code.length > 0) {
-            result = code.map((subcode, index) => {
+        if (codes.length > 0) {
+            result = codes.map((code, index) => {
                 return (
                     <li
                         key={index}
                         className="category-item-sub-item"
                     >
-                        <Link to="/products" className="category-item-link" onClick={this.handleRemoveActive}>
-                            {subcode.name}
+                        <Link to={`/codes/${code.id}/products`} className="category-item-link" onClick={this.handleRemoveActive}>
+                            {code.name}
                         </Link>
                     </li>
                 )

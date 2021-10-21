@@ -1,16 +1,18 @@
 import { combineReducers } from 'redux'
 import products from './products'
 import cart from './cart'
-import productItem from './productItem'
+import productsOfCategories from './productsOfCategories'
 import categories from './categories'
-import codes from './codes'
+import searchProduct from './searchProduct'
+import sortProducts from './sortProducts'
 
 const appReducers = combineReducers({
     products,
-    productItem,
+    productsOfCategories,
     cart,
     categories,
-    codes,
+    searchProduct,
+    sortProducts,
 })
 
 export default appReducers;
