@@ -67,6 +67,10 @@
     cursor: pointer;
 }
 
+.cart-product-item-img:hover {
+    opacity: .7;
+}
+
 .cart-product-item-wrapper-info {
     margin: 0 24px;
     flex: 1;
@@ -76,6 +80,10 @@
     font-size: 18px;
     margin-bottom: 8px;
     cursor: pointer;
+}
+
+.cart-product-item-name:hover {
+    color: var(--primary-color);
 }
 
 .cart-product-item-price {

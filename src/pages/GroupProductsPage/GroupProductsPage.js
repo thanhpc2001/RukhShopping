@@ -12,7 +12,8 @@ class GroupProductsPage extends Component {
         super(props)
         this.state = {
             classifyId: 0,
-            data: []
+            data: [],
+            numShow: 8
         }
     }
 
@@ -36,17 +37,21 @@ class GroupProductsPage extends Component {
             // this.setState({
             //     data: newres.data
             // })
-            this.getDataById(this.props.match.params.id)
+            this.getDataById(this.props.match.params.id, 1)
         }
     }
 
-    getDataById = async (id) => {
+    getDataById = async (id, flag) => {
         const res = await apiCaller(`codes/${id}/classifies`, 'get', null)
         var data = []
         res.data.forEach(async classify => {
             const temp = await apiCaller(`classifies/${classify.id}/products`, 'get', null)
             data = [...data, { classify, products: temp.data }]
-            this.setState({ classifyId: this.state.classifyId || 0, data })
+            this.setState({
+                classifyId: flag ? 0 : this.state.classifyId,
+                data,
+                numShow: this.state.numShow
+            })
         })
 
     }
@@ -54,13 +59,22 @@ class GroupProductsPage extends Component {
     setClassifyId = (id) => {
         this.setState({
             classifyId: id,
-            data: this.state.data
+            data: this.state.data,
+            numShow: this.state.numShow
+        })
+    }
+
+    setNumShow = (num) => {
+        this.setState({
+            classifyId: this.state.classifyId,
+            data: this.state.data,
+            numShow: num
         })
     }
 
     render() {
         // var { products } = this.props
-        var { classifyId, data } = this.state
+        var { classifyId, data, numShow } = this.state
         // console.log(data, classifyId)
         // data.length>0 ? console.log(data[0].products) : console.log('hi')
         // var { sort } = this.props
@@ -74,17 +88,26 @@ class GroupProductsPage extends Component {
         return (
             <React.Fragment>
                 <div className="row">
-                    <FilterProducts data={data} classifyId={classifyId} setClassifyId={this.setClassifyId} />
-                    {data.length > 0 ? this.showProducts(data[classifyId].products) : null}
-                    <ShowMoreProducts numOfProducts={data.length > 0 ? data[classifyId].products.length : null} />
+                    <FilterProducts
+                        data={data}
+                        classifyId={classifyId}
+                        setClassifyId={this.setClassifyId}
+                    />
+                    {data.length > 0 ? this.showProducts(data[classifyId].products, numShow) : null}
+                    <ShowMoreProducts
+                        numOfProducts={data.length > 0 ? data[classifyId].products.length : null}
+                        numShow={numShow}
+                        setNumShow={this.setNumShow}
+                    />
                 </div>
             </React.Fragment>
         );
     }
 
-    showProducts(products) {
-        var result = null
+    showProducts(products, numShow) {
+        var result = []
         var { sort } = this.props
+        const len = products.length
         if (sort) {
             products.sort((a, b) => {
                 if (a.price > b.price) return sort.value
@@ -92,15 +115,31 @@ class GroupProductsPage extends Component {
                 else return 0
             })
         }
-        if (products.length > 0) {
-            result = products.map((product, index) => {
-                return (
-                    <ProductsItem
-                        key={index}
-                        product={product}
-                    />
-                )
-            })
+        if (len > 0) {
+            if (len > numShow) {
+                for (let i = 0; i < numShow; i++) {
+                    result.push(<ProductsItem
+                        key={i}
+                        product={products[i]}
+                    />)
+                }
+            }
+            else {
+                for (let i = 0; i < len; i++) {
+                    result.push(<ProductsItem
+                        key={i}
+                        product={products[i]}
+                    />)
+                }
+            }
+            // result = products.map((product, index) => {
+            //     return (
+            //         <ProductsItem
+            //             key={index}
+            //             product={product}
+            //         />
+            //     )
+            // })
         }
         return result
     }

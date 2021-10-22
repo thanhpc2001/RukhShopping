@@ -23,6 +23,17 @@ class BuyNowPage extends Component {
         }
     }
 
+    async componentDidUpdate(prevProps) {
+        if (this.props.match !== prevProps.match) {
+            const id = this.props.match.params.id
+            const res = await apiCaller(`products/${id}`, 'get', null)
+            this.setState({
+                product: res.data,
+                quantity: this.state.quantity
+            })
+        }
+    }
+
     render() {
         var { product, quantity } = this.state
         return (
