@@ -29,7 +29,7 @@ class GroupProductsPage extends Component {
         }
     }
 
-    async componentDidUpdate(prevProps) {
+    async componentDidUpdate(prevProps, prevState) {
         if (this.props.match !== prevProps.match) {
             // const newmatch = this.props.match
             // const newid = newmatch.params.id
@@ -38,6 +38,9 @@ class GroupProductsPage extends Component {
             //     data: newres.data
             // })
             this.getDataById(this.props.match.params.id, 1)
+        }
+        if (this.props.match.params.id !== prevProps.match.params.id || this.state.classifyId !== prevState.classifyId) {
+            this.setNumShow(8)
         }
     }
 
@@ -75,6 +78,7 @@ class GroupProductsPage extends Component {
     render() {
         // var { products } = this.props
         var { classifyId, data, numShow } = this.state
+        const lenData = data.length
         // console.log(data, classifyId)
         // data.length>0 ? console.log(data[0].products) : console.log('hi')
         // var { sort } = this.props
@@ -93,12 +97,15 @@ class GroupProductsPage extends Component {
                         classifyId={classifyId}
                         setClassifyId={this.setClassifyId}
                     />
-                    {data.length > 0 ? this.showProducts(data[classifyId].products, numShow) : null}
-                    <ShowMoreProducts
-                        numOfProducts={data.length > 0 ? data[classifyId].products.length : null}
+                    {lenData > 0 ? this.showProducts(data[classifyId].products, numShow) : null}
+                    {lenData > 0 ? <ShowMoreProducts
+                        numOfProducts={lenData > 0 ? data[classifyId].products.length : null}
                         numShow={numShow}
                         setNumShow={this.setNumShow}
-                    />
+                        data={data}
+                        // classifyId={classifyId}
+                        setClassifyId={this.setClassifyId}
+                    /> : null}
                 </div>
             </React.Fragment>
         );

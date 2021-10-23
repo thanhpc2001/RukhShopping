@@ -64,10 +64,19 @@
     padding: 8px 12px 12px;
 }
 
+.show-more-all-products-item button {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
 .show-more-all-products-item a {
     color: var(--text-color);
 }
 
+.show-more-all-products-item button:hover,
 .show-more-all-products-item a:hover {
     color: var(--primary-color);
 }

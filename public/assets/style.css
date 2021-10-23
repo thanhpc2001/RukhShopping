@@ -1026,6 +1026,39 @@ footer.footer > h5 {
     color: var(--text-color);
 }
 
+.action-page {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
+
+.top-page,
+.botton-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    width: 36px;
+    height: 36px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    margin-top: 5px;
+    border: none;
+}
+
+.top-page:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.botton-page:hover {
+    cursor: pointer;
+    transform: translateY(3px);
+}
+
+
 @media (max-width: 1023px) {
 
     .main {

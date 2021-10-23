@@ -15,6 +15,14 @@ class Main extends Component {
         this.props.onFetchAllProducts()
     }
 
+    onTop() {
+        window.scrollTo(0, 0);
+    }
+
+    onBotton() {
+        window.scrollTo(0, 10000);
+    }
+
     render() {
         return (
             <section className="main">
@@ -32,6 +40,15 @@ class Main extends Component {
                         </div>
                     </div>
                     <Feature />
+
+                    <div className="action-page">
+                        <button className="top-page" onClick={this.onTop}>
+                            <ion-icon name="chevron-up-outline"></ion-icon>
+                        </button>
+                        <button className="botton-page" onClick={this.onBotton}>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </button>
+                    </div>
                 </div>
             </section>
         );

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
 // import ProductsItem from './../../components/Main/ProductsItem';
-import ShowMoreProducts from './../../components/Main/ShowMoreProducts';
 // import { actSearchProduct } from './../../actions/index'
 // import apiCaller from './../../utils/apiCaller'
 import HomePageItem from './HomePageItem'
@@ -31,8 +30,7 @@ class HomePage extends Component {
                     <div className="col wide l-12 m-12 c-12">
                         <h3 className="title-header-all-products">{item.category.name}</h3>
                     </div>
-                    <HomePageItem products={item.products} />
-                    <ShowMoreProducts numOfProducts={item.products.length} />
+                    <HomePageItem products={item.products} codeId={index} />
                 </React.Fragment>
             })
         }
