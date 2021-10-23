@@ -20,7 +20,7 @@ class Main extends Component {
     }
 
     onBotton() {
-        window.scrollTo(0, 10000);
+        window.scrollTo(0, 100000);
     }
 
     render() {
