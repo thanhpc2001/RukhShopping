@@ -80,14 +80,14 @@ export const actUpdateProductInCart = (product, quantity) => {
     }
 }
 
-export const actSearchProduct = (keyword)=>{
+export const actSearchProduct = (keyword) => {
     return {
         type: types.SEARCH_PRODUCT,
         keyword,
     }
 }
 
-export const actSortProduct = (sort)=>{
+export const actSortProduct = (sort) => {
     return {
         type: types.SORT_PRODUCT,
         sort,
