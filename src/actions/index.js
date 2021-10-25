@@ -93,3 +93,10 @@ export const actSortProduct = (sort) => {
         sort,
     }
 }
+
+export const actAddProductsToModal = (products) => {
+    return {
+        type: types.ADD_PRODUCTS_TO_MODAL,
+        products,
+    }
+}

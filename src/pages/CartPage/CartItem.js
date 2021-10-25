@@ -17,7 +17,7 @@ class CartItemPage extends Component {
         var quantity = this.props.item.quantity > 0 ? this.props.item.quantity : this.state.quantity
         return (
             <div className="cart-product-item">
-                <Link to={`/product/${product.id}/buy-now`} className="cart-product-item-wrapper">
+                <Link to={`/product/${product.id}/information`} className="cart-product-item-wrapper">
                     <img className="cart-product-item-img" src={product.image} alt={product.name} />
                     <div className="cart-product-item-wrapper-info">
                         <h4 className="cart-product-item-name">{product.name}</h4>

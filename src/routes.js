@@ -23,7 +23,7 @@ const routes = [
         main: () => <CartPage />
     },
     {
-        path: '/product/:id/buy-now',
+        path: '/product/:id/information',
         exact: false,
         main: ({ match }) => <BuyNowPage match={match} />
     },

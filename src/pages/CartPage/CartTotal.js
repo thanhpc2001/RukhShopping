@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
+import { actAddProductsToModal } from './../../actions/index'
 
 class CartTotal extends Component {
     render() {
@@ -6,7 +8,11 @@ class CartTotal extends Component {
         return (
             <div className="cart-total-price">
                 <h5>Tổng hóa đơn: {Intl.NumberFormat('de-DE').format(this.showTotal(cart))} vnđ</h5>
-                <button>Thanh toán ngay</button>
+                <button
+                    onClick={() => this.onBuy(cart)}
+                >
+                    Thanh toán ngay
+                </button>
             </div>
         );
     }
@@ -20,6 +26,19 @@ class CartTotal extends Component {
         }
         return result
     }
+
+    onBuy = (products) => {
+        this.props.onAddProductsToModal(products)
+        document.querySelector('.modal-container').classList.add('active')
+    }
 }
 
-export default CartTotal;
+const mapDispatchToProp = (dispatch, props) => {
+    return {
+        onAddProductsToModal: (product) => {
+            dispatch(actAddProductsToModal(product))
+        }
+    }
+}
+
+export default connect(null, mapDispatchToProp)(CartTotal);

@@ -2,9 +2,9 @@ import * as types from './../constants/ActionTypes'
 
 var initialState = []
 
-const products = (state=initialState, action)=>{
-    switch(action.type){
-        case types.FETCH_PRODUCTS:
+const productsOfModal = (state = initialState, action) => {
+    switch (action.type) {
+        case types.ADD_PRODUCTS_TO_MODAL:
             state = action.products
             return [...state]
         default:
@@ -12,4 +12,4 @@ const products = (state=initialState, action)=>{
     }
 }
 
-export default products;
+export default productsOfModal;

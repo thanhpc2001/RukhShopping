@@ -885,8 +885,11 @@ li {
 .product-item-buy-btn {
     border: 1px solid var(--primary-color);
     border-radius: 3px;
+    background-color: transparent;
     padding: 8px 12px;
     color: var(--primary-color);
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .product-item-buy-btn:hover {
@@ -1026,6 +1029,8 @@ footer.footer > h5 {
     color: var(--text-color);
 }
 
+/* Action Page ======================================== */
+
 .action-page {
     display: flex;
     flex-direction: column;
@@ -1058,6 +1063,116 @@ footer.footer > h5 {
     transform: translateY(3px);
 }
 
+/* Modal ======================================== */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 10;
+}
+
+.modal-container.active {
+    display: flex;
+}
+
+.modal-form {
+    display: block;
+    width: 600px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal-header p {
+    color: var(--text-color);
+}
+
+.modal-header ion-icon {
+    --ionicon-stroke-width: 50px;
+    cursor: pointer;
+}
+
+.modal-form-control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.modal-form-control label {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.modal-form-control input {
+    font-size: 16px;
+    color: var(--text-color);
+    width: 300px;
+    border: 1px solid #666;
+    border-radius: 2px;
+    outline: none;
+    padding: 4px;
+    background-color: transparent;
+}
+
+.modal-form-control input.error {
+    border: 1px solid red;
+}
+
+.modal-price-products,
+.modal-total-price {
+    color: var(--primary-color);
+}
+
+.modal-form-control textarea {
+    font-size: 16px;
+    color: var(--text-color);
+    width: 300px;
+    border: 1px solid #666;
+    border-radius: 2px;
+    outline: none;
+    padding: 4px;
+}
+
+.modal-form-control select {
+    font-size: 16px;
+    color: var(--text-color);
+    border: 1px solid #666;
+    border-radius: 2px;
+    outline: none;
+    padding: 4px;
+}
+
+.modal-confirm {
+    float: right;
+    font-size: 16px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 2px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.modal-confirm:hover {
+    opacity: .8;
+}
 
 @media (max-width: 1023px) {
 

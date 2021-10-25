@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import apiCaller from './../../utils/apiCaller'
+import { connect } from 'react-redux'
+import { actAddProductsToModal } from './../../actions/index'
 
 class BuyNowPage extends Component {
 
@@ -62,7 +64,12 @@ class BuyNowPage extends Component {
                             <h5 className="pay-total-price">
                                 Tổng tiền: {Intl.NumberFormat('de-DE').format(this.showTotalPrice(product.price, quantity))} vnđ
                             </h5>
-                            <button className="pay-btn">Thanh toán ngay</button>
+                            <button
+                                className="pay-btn"
+                                onClick={() => this.onBuy([{ product, quantity }])}
+                            >
+                                Thanh toán ngay
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -82,6 +89,22 @@ class BuyNowPage extends Component {
             })
         }
     }
+
+    onBuy = (products) => {
+        this.props.onAddProductsToModal(products)
+        document.querySelector('.modal-container').classList.add('active')
+    }
 }
 
-export default BuyNowPage;
+const mapDispatchToProp = (dispatch, props) => {
+    return {
+        // onAddToCart: (product) => {
+        //     dispatch(actAddToCart(product, 1))
+        // },
+        onAddProductsToModal: (product) => {
+            dispatch(actAddProductsToModal(product))
+        }
+    }
+}
+
+export default connect(null, mapDispatchToProp)(BuyNowPage);

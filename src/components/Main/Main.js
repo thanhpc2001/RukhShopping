@@ -6,6 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import { connect } from 'react-redux'
 import { actFetchCategoriesRequest, actFetchProductOfCategoriesRequest, actFetchProductsRequest } from './../../actions/index'
+import Modal from './Modal';
 
 class Main extends Component {
 
@@ -49,6 +50,8 @@ class Main extends Component {
                             <ion-icon name="chevron-down-outline"></ion-icon>
                         </button>
                     </div>
+
+                    <Modal />
                 </div>
             </section>
         );
