@@ -27,6 +27,10 @@ class Modal extends Component {
             note: '',
             option: 'normal'
         })
+        const inputs = document.querySelectorAll('.modal-form-control input')
+        inputs.forEach(input => {
+            input.classList.remove('error')
+        })
     }
 
     addDay(days) {
@@ -50,10 +54,10 @@ class Modal extends Component {
         data.products = this.props.productsOfModal
         const check = this.onCheck()
         check === 1 && this.onCloseModal()
-        this.setStateDefault()
     }
 
     onCloseModal() {
+        this.setStateDefault()
         document.querySelector('.modal-container').classList.remove('active')
     }
 
@@ -92,7 +96,7 @@ class Modal extends Component {
                 <form className="modal-form">
                     <div className="modal-header">
                         <p>Thông tin mua hàng</p>
-                        <ion-icon name="close-outline" onClick={this.onCloseModal}></ion-icon>
+                        <ion-icon name="close-outline" onClick={() => this.onCloseModal()}></ion-icon>
                     </div>
                     <div className="modal-form-control">
                         <label>Tên khách hàng (*)</label>
@@ -138,6 +142,7 @@ class Modal extends Component {
                         <label>Hình thức giao hàng</label>
                         <select
                             name="option"
+                            value={this.state.option}
                             onChange={this.onChange}
                         >
                             <option value="normal" className="modal-delivery-option">Giao hàng tiết kiệm</option>
@@ -153,9 +158,9 @@ class Modal extends Component {
                         <p className="modal-price-products">{Intl.NumberFormat('de-DE').format(price)} vnđ</p>
                     </div>
                     <div className="modal-form-control">
-                        <label>Phí vận chuyển</label>
+                        <label>Phí vận chuyển<br /><span>(miễn phí vận chuyển cho đơn hàng từ 300.000 vnđ)</span></label>
                         <p className="modal-delivery-price">
-                            {Intl.NumberFormat('de-DE').format(this.showDeliveryPrice(option))} vnđ
+                            {price > 300000 ? 'Miễn phí' : `${Intl.NumberFormat('de-DE').format(this.showDeliveryPrice(option))} vnđ`}
                         </p>
                     </div>
                     <div className="modal-form-control">
@@ -187,10 +192,15 @@ class Modal extends Component {
     }
 
     showTotalPrice(price, option) {
-        if (option === 'normal')
-            return price + 14000
-        else
-            return price + 30000
+        if (price > 300000) {
+            return price
+        }
+        else {
+            if (option === 'normal')
+                return price + 14000
+            else
+                return price + 30000
+        }
     }
 
     computTotalPrice(products) {

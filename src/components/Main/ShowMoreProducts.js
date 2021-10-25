@@ -19,7 +19,7 @@ class ShowMoreProducts extends Component {
     }
 
     render() {
-        const { numOfProducts, numShow, codeId, categories, data } = this.props
+        const { numOfProducts, numShow, classifyId, categories, data } = this.props
         return (
             <React.Fragment>
                 <div className="col wide l-12 m-12 c-12">
@@ -31,7 +31,7 @@ class ShowMoreProducts extends Component {
                             {numOfProducts - numShow > 0 && `Xem thêm ${numOfProducts - numShow} sản phẩm`}
                         </h5>
                         <ul className="show-more-all-products-list">
-                            {codeId >= 0 ? this.showSubCategories(codeId, categories) : null}
+                            {classifyId >= 0 ? this.showSubCategories(classifyId, categories) : null}
                             {data ? this.showRelativeProducts(data) : null}
                         </ul>
                     </div>
@@ -40,8 +40,14 @@ class ShowMoreProducts extends Component {
         );
     }
 
-    showSubCategories(codeId, categories) {
+    showSubCategories(classifyId, categories) {
         var result = []
+        var codeId = 0
+        categories.forEach((category, index) => {
+            // console.log(classifyId,category.category.id)
+            if (category.category.id === classifyId)
+                codeId = index
+        })
         if (categories[codeId]) {
             result = categories[codeId].codes.map((code, index) => {
                 return <li key={index} className="show-more-all-products-item">

@@ -19,7 +19,7 @@ class HomePageItem extends Component {
     }
 
     render() {
-        const { products, codeId } = this.props
+        const { products, classifyId } = this.props
         const { numShow } = this.state
         return (
             <React.Fragment>
@@ -28,7 +28,7 @@ class HomePageItem extends Component {
                     numOfProducts={products.length}
                     numShow={numShow}
                     setNumShow={this.setNumShow}
-                    codeId={codeId}
+                    classifyId={classifyId}
                 />
             </React.Fragment>
         );

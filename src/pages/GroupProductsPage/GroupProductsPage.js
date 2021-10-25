@@ -13,7 +13,7 @@ class GroupProductsPage extends Component {
         this.state = {
             classifyId: 0,
             data: [],
-            numShow: 8
+            numShow: 20
         }
     }
 
@@ -40,7 +40,7 @@ class GroupProductsPage extends Component {
             this.getDataById(this.props.match.params.id, 1)
         }
         if (this.props.match.params.id !== prevProps.match.params.id || this.state.classifyId !== prevState.classifyId) {
-            this.setNumShow(8)
+            this.setNumShow(20)
         }
     }
 

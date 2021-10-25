@@ -1086,9 +1086,16 @@ footer.footer > h5 {
     display: block;
     width: 600px;
     max-width: 90%;
+    max-height: 100%;
+    overflow-x: auto;
+    
     padding: 20px;
     border-radius: 2px;
     background-color: var(--white-color);
+}
+
+.modal-form::-webkit-scrollbar {
+    display: none;
 }
 
 .modal-header {
@@ -1118,6 +1125,12 @@ footer.footer > h5 {
     font-size: 16px;
     font-weight: 500;
     color: var(--primary-color);
+}
+
+.modal-form-control span {
+    font-size: 12px;
+    color: var(--text-color);
+    font-weight: 400;
 }
 
 .modal-form-control input {
@@ -1157,6 +1170,7 @@ footer.footer > h5 {
     border-radius: 2px;
     outline: none;
     padding: 4px;
+    background-color: transparent;
 }
 
 .modal-confirm {
@@ -1311,5 +1325,19 @@ footer.footer > h5 {
 
     .feature {
         margin-bottom: 4px;
+    }
+
+    .modal-form-control {
+        flex-direction: column;
+    }
+
+    .modal-form-control label {
+        margin-bottom: 4px;
+    }
+
+    .modal-form-control select,
+    .modal-form-control textarea,
+    .modal-form-control input {
+        width: 100%;
     }
 }

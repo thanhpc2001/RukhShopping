@@ -30,7 +30,7 @@ class HomePage extends Component {
                     <div className="col wide l-12 m-12 c-12">
                         <h3 className="title-header-all-products">{item.category.name}</h3>
                     </div>
-                    <HomePageItem products={item.products} codeId={index} />
+                    <HomePageItem products={item.products} classifyId={item.category.id} />
                 </React.Fragment>
             })
         }
