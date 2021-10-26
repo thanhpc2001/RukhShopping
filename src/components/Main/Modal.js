@@ -66,13 +66,23 @@ class Modal extends Component {
         var result = 1
         inputs.forEach(input => {
             if (input.name === 'email') {
-                const regex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/
-                if (!regex.test(input.value)) {
+                const regexEmail = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/
+                if (!regexEmail.test(input.value)) {
                     result = -1
                     input.classList.add('error')
                 }
                 else {
                     input.classList.remove('error')
+                }
+            }
+            else if (input.name === 'phone') {
+                const regexPhone = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/
+                if (regexPhone.test(input.value) && input.value.length >= 10 && input.value.length <= 11) {
+                    input.classList.remove('error')
+                }
+                else {
+                    result = -1
+                    input.classList.add('error')
                 }
             }
             else {

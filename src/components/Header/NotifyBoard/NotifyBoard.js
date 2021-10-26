@@ -8,17 +8,6 @@ class NotifyBoard extends Component {
                 <p>Thông báo mới nhất</p>
                 <ul className="notify-board-list">
                     <NotifyBoardItem />
-                    <NotifyBoardItem />
-                    <NotifyBoardItem />
-                    <NotifyBoardItem />
-                    <NotifyBoardItem />
-                    <NotifyBoardItem />
-                    <NotifyBoardItem />
-                    <NotifyBoardItem />
-                    <NotifyBoardItem />
-                    <NotifyBoardItem />
-                    <NotifyBoardItem />
-                    <NotifyBoardItem />
                 </ul>
                 <p>Hiển thị tất cả</p>
             </div>

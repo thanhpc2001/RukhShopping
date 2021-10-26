@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import apiCaller from './../../utils/apiCaller'
 import { connect } from 'react-redux'
-import { actAddProductsToModal } from './../../actions/index'
+import { actAddProductsToModal, actAddToCart } from './../../actions/index'
 
 class BuyNowPage extends Component {
 
@@ -64,12 +64,20 @@ class BuyNowPage extends Component {
                             <h5 className="pay-total-price">
                                 Tổng tiền: {Intl.NumberFormat('de-DE').format(this.showTotalPrice(product.price, quantity))} vnđ
                             </h5>
-                            <button
-                                className="pay-btn"
-                                onClick={() => this.onBuy([{ product, quantity }])}
-                            >
-                                Thanh toán ngay
-                            </button>
+                            <div className="action-btn-wrapper">
+                                <button
+                                    className="pay-btn"
+                                    onClick={() => this.onBuy([{ product, quantity }])}
+                                >
+                                    Thanh toán ngay
+                                </button>
+                                <button
+                                    className="add-to-cart-btn"
+                                    onClick={() => this.onAddToCart(product, quantity)}
+                                >
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -94,13 +102,17 @@ class BuyNowPage extends Component {
         this.props.onAddProductsToModal(products)
         document.querySelector('.modal-container').classList.add('active')
     }
+
+    onAddToCart = (product, quantity) => {
+        this.props.onAddToCart(product, quantity)
+    }
 }
 
 const mapDispatchToProp = (dispatch, props) => {
     return {
-        // onAddToCart: (product) => {
-        //     dispatch(actAddToCart(product, 1))
-        // },
+        onAddToCart: (product, quantity) => {
+            dispatch(actAddToCart(product, quantity))
+        },
         onAddProductsToModal: (product) => {
             dispatch(actAddProductsToModal(product))
         }
