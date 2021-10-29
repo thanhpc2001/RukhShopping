@@ -114,7 +114,7 @@ class HeaderSearch extends Component {
                         value={this.state.keyword}
                         onChange={this.onChange}
                         onFocus={this.handleFocus}
-                        // onKeyDown={this.handleKeyDown}
+                        onKeyDown={this.handleKeyDown}
                     />
                     <Link
                         id="header-search-btn"
