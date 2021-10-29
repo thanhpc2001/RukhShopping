@@ -102,7 +102,7 @@ class HeaderSearch extends Component {
 
     handleKeyDown = (e) => {
         if (e.key === 'Enter') {
-            document.querySelector('#header-search-btn').click()
+            document.querySelector('.search-icon').click()
         }
     }
 
@@ -117,7 +117,6 @@ class HeaderSearch extends Component {
                         onKeyDown={this.handleKeyDown}
                     />
                     <Link
-                        id="header-search-btn"
                         to="/results"
                         className="search-icon"
                         onClick={() => this.onSearch(this.state.keyword)}
