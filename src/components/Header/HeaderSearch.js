@@ -100,9 +100,9 @@ class HeaderSearch extends Component {
         localStorage.setItem('RUKHSHOPPING_HISTORY_SEARCH', JSON.stringify(historySearch))
     }
 
-    handleKeyDown(e) {
+    handleKeyDown = (e) => {
         if (e.key === 'Enter') {
-            console.log(2)
+            document.querySelector('#header-search-btn').click()
         }
     }
 
@@ -117,6 +117,7 @@ class HeaderSearch extends Component {
                         // onKeyDown={this.handleKeyDown}
                     />
                     <Link
+                        id="header-search-btn"
                         to="/results"
                         className="search-icon"
                         onClick={() => this.onSearch(this.state.keyword)}

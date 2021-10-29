@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import { actSearchProduct } from './../../actions/index'
 
 class MobileSearch extends Component {
@@ -96,6 +96,15 @@ class MobileSearch extends Component {
         })
         localStorage.setItem('RUKHSHOPPING_HISTORY_SEARCH', JSON.stringify(historySearch))
     }
+
+    handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            this.onSearch(this.state.keyword)
+            // document.querySelector('.icons.active').classList.remove('active')
+            return <Redirect to="/results" />
+        }
+    }
+
     render() {
         return (
             <React.Fragment>
@@ -104,7 +113,7 @@ class MobileSearch extends Component {
                         value={this.state.keyword}
                         onChange={this.onChange}
                         onFocus={this.handleFocus}
-                        onKeyDown={this.handleKeyDown}
+                        // onKeyDown={this.handleKeyDown}
                     />
                     <Link
                         to="/results"
